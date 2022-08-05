@@ -1,32 +1,32 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
-import { PATHS } from '../../../shared/paths';
-import phone from '../../../images/icons/phone.png';
+import { PATHS } from '../../shared/paths';
+
+import phone from '../../images/icons/phone.png';
 import './Header.scss';
 
 const Header: FC = () => {
   const { main, catalog, reviews, stages } = PATHS;
 
   return (
-    <header className="wrapper">
-      <div data-testid="header" className="header">
-        <Link to={main} className="logo">
+    <div className="wrapper">
+      <header data-testid="header" className="header">
+        <a href={main} className="logo">
           Montajkolec.by
-        </Link>
+        </a>
         <nav className="nav">
           <ul className="nav-wrapper">
             <li>
-              <a href={`#${catalog}`} className="nav-link">
+              <a href={catalog} className="nav-link">
                 Каталог
               </a>
             </li>
             <li>
-              <a href={`#${reviews}`} className="nav-link">
+              <a href={reviews} className="nav-link">
                 Отзывы
               </a>
             </li>
             <li>
-              <a href={`#${stages}`} className="nav-link">
+              <a href={stages} className="nav-link">
                 Этапы работ
               </a>
             </li>
@@ -42,8 +42,8 @@ const Header: FC = () => {
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
+    </div>
   );
 };
 export { Header };

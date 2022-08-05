@@ -1,10 +1,46 @@
 @import './sass/Normalize.scss';
 @import './sass/Constants.scss';
 
+// === FONTS ===
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('./fonts/rubik-v21-latin_cyrillic-regular.woff2') format('woff2'),
+    url('./fonts/rubik-v21-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('./fonts/rubik-v21-latin_cyrillic-500.woff2') format('woff2'),
+    url('./fonts/rubik-v21-latin_cyrillic-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), url('./fonts/rubik-v21-latin_cyrillic-600.woff2') format('woff2'),
+    url('./fonts/rubik-v21-latin_cyrillic-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('./fonts/rubik-v21-latin_cyrillic-700.woff2') format('woff2'),
+    url('./fonts/rubik-v21-latin_cyrillic-700.woff') format('woff');
+}
+
+// === / FONTS ===
+
 // === COMMON ===
 
 body {
-  @include roboto;
+  font-family: 'Rubik', sans-serif;
   color: $color-black;
   background-color: $color-white;
 }
@@ -24,7 +60,7 @@ optgroup,
 option,
 select,
 datalist {
-  @include roboto;
+  font-family: 'Rubik', sans-serif;
 }
 
 button,
@@ -41,17 +77,25 @@ svg {
 }
 
 .wrapper {
-  margin-top: 38px;
-  margin-right: 118px;
-  margin-left: 90px;
+  max-width: 1728px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 105px;
+  padding-right: 105px;
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 h1 {
-  @include roboto;
+  font-family: 'Rubik', sans-serif;
   width: calcResponsiveSize(499, 809, 769, 1728);
   margin: 0;
+  margin-top: 117px;
   font-size: calcResponsiveSize(40, 55, 769, 1728);
-  font-weight: $fw-bold;
+  font-weight: $fw-semi-bold;
   line-height: calcResponsiveSize(48, 65.18, 769, 1728);
 
   @media (max-width: $breakpoint-md-min) {
@@ -68,9 +112,9 @@ h1 {
 }
 
 h2 {
-  font-size: calcResponsiveSize(32, 55, 769, 1728);
-  font-weight: $fw-bold;
-  line-height: calcResponsiveSize(38.4, 65.18, 769, 1728);
+  font-size: calcResponsiveSize(32, 40, 769, 1728);
+  font-weight: $fw-semi-bold;
+  line-height: calcResponsiveSize(38.4, 47.4, 769, 1728);
 
   @media (max-width: $breakpoint-md-min) {
     font-size: calcResponsiveSize(24, 32, 361, 768);
@@ -101,19 +145,22 @@ h3 {
 }
 
 h4 {
-  font-size: calcResponsiveSize(20, 27, 769, 1728);
+  font-size: calcResponsiveSize(24, 24, 1, 1728);
   font-weight: $fw-medium;
-  line-height: calcResponsiveSize(24, 32, 769, 1728);
+  line-height: calcResponsiveSize(24, 24, 1, 1728);
 
-  @media (max-width: $breakpoint-md-min) {
-    font-size: calcResponsiveSize(15, 20, 361, 768);
-    line-height: calcResponsiveSize(18, 24, 361, 768);
-  }
+  // font-size: calcResponsiveSize(20, 27, 769, 1728);
+  // line-height: calcResponsiveSize(24, 32, 769, 1728);
 
-  @media (max-width: $breakpoint-xxs-min) {
-    font-size: calcResponsiveSize(15, 15, 1, 360);
-    line-height: calcResponsiveSize(18, 18, 1, 360);
-  }
+  // @media (max-width: $breakpoint-md-min) {
+  //   font-size: calcResponsiveSize(15, 20, 361, 768);
+  //   line-height: calcResponsiveSize(18, 24, 361, 768);
+  // }
+
+  // @media (max-width: $breakpoint-xxs-min) {
+  //   font-size: calcResponsiveSize(15, 15, 1, 360);
+  //   line-height: calcResponsiveSize(18, 18, 1, 360);
+  // }
 }
 
 h5 {
@@ -139,6 +186,10 @@ strong {
   font-weight: $fw-medium;
 }
 
+.fw_semi-bold {
+  font-weight: $fw-semi-bold;
+}
+
 .fw_bold {
   font-weight: $fw-bold;
 }
@@ -149,11 +200,6 @@ strong {
 
 .color_blue {
   color: $color-blue;
-}
-
-.disabled_all {
-  pointer-events: none;
-  user-select: none;
 }
 
 .overflow_hidden {

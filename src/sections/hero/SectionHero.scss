@@ -1,0 +1,43 @@
+@import '../../sass/Constants.scss';
+
+.section-hero_bg-first {
+  position: relative;
+  background-image: url('../../images/bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-hero__wrapper {
+  position: relative;
+  padding-bottom: 171px;
+}
+
+.sewerage {
+  position: absolute;
+  top: -105px;
+  right: 105px;
+  width: 663px;
+  height: 742px;
+}
+
+.benefits-header__wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-top: 38px;
+}
+
+.benefits-main__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: calcResponsiveSize(20, 32, 769, 1728);
+  margin-top: 81px;
+
+  @media (max-width: $breakpoint-md-min) {
+    row-gap: calcResponsiveSize(10, 20, 1, 769);
+  }
+}

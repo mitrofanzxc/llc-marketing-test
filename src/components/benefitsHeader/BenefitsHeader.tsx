@@ -11,7 +11,7 @@ const BenefitsHeader: FC<IBenefitsHeader> = ({ src, description }) => {
     <div className="benefits-header_first">
       <div className="benefits-header_second">
         <img src={src} alt={description} className="benefits-header__icon" />
-        <h5>{description}</h5>
+        <p className="benefits-header__description">{description}</p>
       </div>
     </div>
   );

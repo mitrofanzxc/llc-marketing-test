@@ -1,17 +1,13 @@
 import { FC } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { PATHS } from './shared/paths';
-import { Layout, Main } from './pages';
+import { SectionHero, Footer } from './sections';
 
 const App: FC = () => {
-  const { main } = PATHS;
-
   return (
-    <Routes>
-      <Route path={main} element={<Layout />}>
-        <Route index element={<Main />} />
-      </Route>
-    </Routes>
+    <>
+      <SectionHero />
+      <main>main</main>
+      <Footer />
+    </>
   );
 };
 
