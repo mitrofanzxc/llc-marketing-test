@@ -1,0 +1,25 @@
+@import '../../sass/Constants.scss';
+
+.benefits-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 350px;
+  height: 206px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  h4 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.benefits-main__icon {
+  width: 83px;
+  height: 83px;
+}

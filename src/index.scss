@@ -127,6 +127,10 @@ h5 {
   }
 }
 
+strong {
+  color: $color-green;
+}
+
 .fw_regular {
   font-weight: $fw-regular;
 }
@@ -137,6 +141,14 @@ h5 {
 
 .fw_bold {
   font-weight: $fw-bold;
+}
+
+.text-align_center {
+  text-align: center;
+}
+
+.color_blue {
+  color: $color-blue;
 }
 
 .disabled_all {

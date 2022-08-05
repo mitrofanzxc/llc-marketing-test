@@ -8,7 +8,7 @@ export interface IPrimaryButton {
 const PrimaryButton: FC<IPrimaryButton> = ({ description }) => {
   return (
     <>
-      <button>{description}</button>
+      <button className="primary-button">{description}</button>
     </>
   );
 };

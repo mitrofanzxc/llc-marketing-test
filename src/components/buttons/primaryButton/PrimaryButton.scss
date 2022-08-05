@@ -1,1 +1,23 @@
 @import '../../../sass/Constants.scss';
+
+.primary-button {
+  width: 479px;
+  height: 96px;
+  padding: 15px 86px 15px 86px;
+  font-size: 24px;
+  font-weight: $fw-medium;
+  line-height: 28.8px;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-green;
+  border-radius: 8px;
+  transition: all $transition-01 ease-in;
+
+  &:hover {
+    background-color: $color-green-meduim;
+  }
+
+  &:active {
+    background-color: $color-green-light;
+  }
+}
