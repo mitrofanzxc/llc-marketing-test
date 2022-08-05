@@ -1,0 +1,23 @@
+@import '../../sass/Constants.scss';
+
+.benefits-header_first {
+  width: 292px;
+  height: 119px;
+  padding: 4.8px 4.23px;
+  border-radius: 4px;
+  background-color: $color-white;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.benefits-header_second {
+  display: flex;
+  align-items: center;
+  border: 1px solid $color-grey-light;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.benefits-header__icon {
+  flex-basis: 41%;
+  margin-right: 5px;
+}

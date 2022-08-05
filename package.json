@@ -1,11 +1,11 @@
 {
-  "name": "async-race",
+  "name": "llc-marketing-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/async-race",
+  "homepage": "https://rolling-scopes-school.github.io/mitrofanzxc-JSFE2022Q1/llc-marketing-test",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d ./build -e async-race",
+    "deploy": "gh-pages -d ./build -e llc-marketing-test",
     "start": "cross-env HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

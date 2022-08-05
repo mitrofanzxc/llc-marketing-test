@@ -40,21 +40,30 @@ svg {
   height: auto;
 }
 
+.wrapper {
+  margin-top: 38px;
+  margin-right: 118px;
+  margin-left: 90px;
+}
+
 h1 {
   @include roboto;
+  width: calcResponsiveSize(499, 809, 769, 1728);
   margin: 0;
   font-size: calcResponsiveSize(40, 55, 769, 1728);
   font-weight: $fw-bold;
   line-height: calcResponsiveSize(48, 65.18, 769, 1728);
 
   @media (max-width: $breakpoint-md-min) {
+    width: calcResponsiveSize(264, 499, 361, 768);
     font-size: calcResponsiveSize(32, 40, 361, 768);
     line-height: calcResponsiveSize(38.4, 48, 361, 768);
   }
 
   @media (max-width: $breakpoint-xxs-min) {
-    font-size: calcResponsiveSize(32, 32, 360, 1);
-    line-height: calcResponsiveSize(38.4, 38.4, 360, 1);
+    width: calcResponsiveSize(264, 264, 1, 360);
+    font-size: calcResponsiveSize(32, 32, 1, 360);
+    line-height: calcResponsiveSize(38.4, 38.4, 1, 360);
   }
 }
 
@@ -69,9 +78,9 @@ h2 {
   }
 
   @media (max-width: $breakpoint-xxs-min) {
-    font-size: calcResponsiveSize(24, 24, 360, 1);
+    font-size: calcResponsiveSize(24, 24, 1, 360);
     font-weight: $fw-medium;
-    line-height: calcResponsiveSize(28.8, 28.8, 360, 1);
+    line-height: calcResponsiveSize(28.8, 28.8, 1, 360);
   }
 }
 
@@ -86,8 +95,8 @@ h3 {
   }
 
   @media (max-width: $breakpoint-xxs-min) {
-    font-size: calcResponsiveSize(20, 20, 360, 1);
-    line-height: calcResponsiveSize(24, 24, 360, 1);
+    font-size: calcResponsiveSize(20, 20, 1, 360);
+    line-height: calcResponsiveSize(24, 24, 1, 360);
   }
 }
 
@@ -102,8 +111,8 @@ h4 {
   }
 
   @media (max-width: $breakpoint-xxs-min) {
-    font-size: calcResponsiveSize(15, 15, 360, 1);
-    line-height: calcResponsiveSize(18, 18, 360, 1);
+    font-size: calcResponsiveSize(15, 15, 1, 360);
+    line-height: calcResponsiveSize(18, 18, 1, 360);
   }
 }
 
@@ -113,8 +122,8 @@ h5 {
   line-height: calcResponsiveSize(18, 30.8, 769, 1728);
 
   @media (max-width: $breakpoint-md-min) {
-    font-size: calcResponsiveSize(15, 15, 768, 1);
-    line-height: calcResponsiveSize(18, 18, 768, 1);
+    font-size: calcResponsiveSize(15, 15, 1, 768);
+    line-height: calcResponsiveSize(18, 18, 1, 768);
   }
 }
 
