@@ -1,0 +1,92 @@
+@import './sass/Normalize.scss';
+@import './sass/Constants.scss';
+
+// === COMMON ===
+
+body {
+  @include rubick;
+  background-color: $color-white;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+fieldset,
+button,
+label,
+legend,
+optgroup,
+option,
+select,
+datalist {
+  @include rubick;
+}
+
+button,
+label,
+select,
+option {
+  cursor: pointer;
+}
+
+img,
+svg {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  @include rubick;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: $fw-regular;
+  line-height: 1.999rem;
+  color: $color-dark;
+}
+
+h2 {
+  font-size: $fs-xl;
+  font-weight: $fw-semi-bold;
+  line-height: 1.54rem;
+  letter-spacing: 0.06em;
+  color: $color-dark;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: $fs-xs;
+  font-weight: $fw-semi-bold;
+  line-height: 0.84rem;
+  letter-spacing: 0.06em;
+  color: $color-dark;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: $fs-xs;
+  font-weight: $fw-medium;
+  color: $color-dark-09;
+}
+
+.disabled_all {
+  pointer-events: none;
+  user-select: none;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+.display_none {
+  display: none;
+}
+
+.opacity_zero {
+  opacity: 0;
+}
+
+// === / COMMON ===
