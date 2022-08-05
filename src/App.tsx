@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { PATHS } from './shared';
+import { PATHS } from './shared/paths';
 import { Layout, Main } from './pages';
 
 const App: FC = () => {

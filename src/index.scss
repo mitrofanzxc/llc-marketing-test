@@ -4,7 +4,8 @@
 // === COMMON ===
 
 body {
-  @include rubick;
+  @include roboto;
+  color: $color-black;
   background-color: $color-white;
 }
 
@@ -23,7 +24,7 @@ optgroup,
 option,
 select,
 datalist {
-  @include rubick;
+  @include roboto;
 }
 
 button,
@@ -40,36 +41,93 @@ svg {
 }
 
 h1 {
-  @include rubick;
+  @include roboto;
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: $fw-regular;
-  line-height: 1.999rem;
-  color: $color-dark;
+  font-size: calcResponsiveSize(40, 55, 769, 1728);
+  font-weight: $fw-bold;
+  line-height: calcResponsiveSize(48, 65.18, 769, 1728);
+
+  @media (max-width: $breakpoint-md-min) {
+    font-size: calcResponsiveSize(32, 40, 361, 768);
+    line-height: calcResponsiveSize(38.4, 48, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    font-size: calcResponsiveSize(32, 32, 360, 1);
+    line-height: calcResponsiveSize(38.4, 38.4, 360, 1);
+  }
 }
 
 h2 {
-  font-size: $fs-xl;
-  font-weight: $fw-semi-bold;
-  line-height: 1.54rem;
-  letter-spacing: 0.06em;
-  color: $color-dark;
-  text-transform: uppercase;
+  font-size: calcResponsiveSize(32, 55, 769, 1728);
+  font-weight: $fw-bold;
+  line-height: calcResponsiveSize(38.4, 65.18, 769, 1728);
+
+  @media (max-width: $breakpoint-md-min) {
+    font-size: calcResponsiveSize(24, 32, 361, 768);
+    line-height: calcResponsiveSize(28.8, 38.4, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    font-size: calcResponsiveSize(24, 24, 360, 1);
+    font-weight: $fw-medium;
+    line-height: calcResponsiveSize(28.8, 28.8, 360, 1);
+  }
 }
 
 h3 {
-  font-size: $fs-xs;
-  font-weight: $fw-semi-bold;
-  line-height: 0.84rem;
-  letter-spacing: 0.06em;
-  color: $color-dark;
-  text-transform: uppercase;
+  font-size: calcResponsiveSize(24, 36, 769, 1728);
+  font-weight: $fw-medium;
+  line-height: calcResponsiveSize(28.8, 30, 769, 1728);
+
+  @media (max-width: $breakpoint-md-min) {
+    font-size: calcResponsiveSize(20, 24, 361, 768);
+    line-height: calcResponsiveSize(24, 28.8, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    font-size: calcResponsiveSize(20, 20, 360, 1);
+    line-height: calcResponsiveSize(24, 24, 360, 1);
+  }
 }
 
 h4 {
-  font-size: $fs-xs;
+  font-size: calcResponsiveSize(20, 27, 769, 1728);
   font-weight: $fw-medium;
-  color: $color-dark-09;
+  line-height: calcResponsiveSize(24, 32, 769, 1728);
+
+  @media (max-width: $breakpoint-md-min) {
+    font-size: calcResponsiveSize(15, 20, 361, 768);
+    line-height: calcResponsiveSize(18, 24, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    font-size: calcResponsiveSize(15, 15, 360, 1);
+    line-height: calcResponsiveSize(18, 18, 360, 1);
+  }
+}
+
+h5 {
+  font-size: calcResponsiveSize(15, 22, 769, 1728);
+  font-weight: $fw-regular;
+  line-height: calcResponsiveSize(18, 30.8, 769, 1728);
+
+  @media (max-width: $breakpoint-md-min) {
+    font-size: calcResponsiveSize(15, 15, 768, 1);
+    line-height: calcResponsiveSize(18, 18, 768, 1);
+  }
+}
+
+.fw_regular {
+  font-weight: $fw-regular;
+}
+
+.fw_medium {
+  font-weight: $fw-medium;
+}
+
+.fw_bold {
+  font-weight: $fw-bold;
 }
 
 .disabled_all {
