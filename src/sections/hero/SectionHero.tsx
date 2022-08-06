@@ -13,12 +13,20 @@ const SectionHero: FC = () => {
   return (
     <section className="section-hero_bg-first">
       <Header />
-      <div className="wrapper section-hero__wrapper">
-        <h1>Установка канализации из бетонных колец в Минске и области</h1>
+      <div className="wrapper-hero section-hero__wrapper">
+        <h1>
+          Установка канализации
+          <br />
+          из бетонных колец в Минске и области
+        </h1>
         <div className="benefits-header__wrapper">
-          <BenefitsHeader src={engineer} description="Выезд инженера бесплатно" />
-          <BenefitsHeader src={mounting} description="Все монтажные работы за один день" />
-          <BenefitsHeader src={payment} description="Оплата по факту" />
+          <BenefitsHeader src={engineer} logo="engineer" description="Выезд инженера бесплатно" />
+          <BenefitsHeader
+            src={mounting}
+            logo="mounting"
+            description="Все монтажные работы за 1 день"
+          />
+          <BenefitsHeader src={payment} logo="payment" description="Оплата по факту" />
         </div>
         <PrimaryButton description="Заказать консультацию инженера" />
         <img src={sewerage} alt="sewerage" className="sewerage" />

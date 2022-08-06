@@ -89,7 +89,22 @@ svg {
   }
 }
 
+.wrapper-hero {
+  max-width: 1728px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 90px;
+  padding-right: 90px;
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 h1 {
+  position: relative;
+  z-index: 2;
   font-family: 'Rubik', sans-serif;
   width: calcResponsiveSize(499, 809, 769, 1728);
   margin: 0;

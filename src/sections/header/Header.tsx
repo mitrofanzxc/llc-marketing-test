@@ -8,7 +8,7 @@ const Header: FC = () => {
   const { main, catalog, reviews, stages } = PATHS;
 
   return (
-    <div className="wrapper">
+    <div className="wrapper-hero">
       <header data-testid="header" className="header">
         <a href={main} className="logo">
           Montajkolec.by

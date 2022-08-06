@@ -18,11 +18,26 @@
 }
 
 .benefits-header__icon {
-  flex-basis: 41%;
-  margin-right: 5px;
+  margin-left: 17px;
+  margin-right: 17px;
 }
 
 .benefits-header__description {
   font-size: 16px;
   font-size: $fw-regular;
+}
+
+.engineer {
+  width: 118px;
+  height: 73px;
+}
+
+.mounting {
+  width: 207px;
+  height: 73px;
+}
+
+.payment {
+  width: 106px;
+  height: 69px;
 }
