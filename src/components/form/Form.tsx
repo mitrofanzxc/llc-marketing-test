@@ -26,8 +26,7 @@ const Form: FC = () => {
   const phoneHandler = (event: ChangeEvent<HTMLInputElement>) => {
     const VALUE = event.currentTarget.value;
     setIsPhone(VALUE);
-    const result =
-      /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/gm;
+    const result = /^(\+375|80) \((29|25|44|33|17)\) [0-9]{3}-[0-9]{2}-[0-9]{2}$/gm;
     if (!result.test(String(VALUE).toLocaleLowerCase())) {
       setIsPhoneError('Некорректно введен номер.');
     } else {
@@ -82,23 +81,34 @@ const Form: FC = () => {
   return (
     <form method="POST" className="form">
       <input type="text" name="" id="" placeholder="Имя" className="input" />
-      <label className="input-phone__label">
-        Enter your phone number:
-        <input
-          className="input"
-          type="tel"
-          id="tel"
-          name="tel"
-          placeholder="Телефон"
-          onBlur={(event) => blurHandler(event)}
-          onChange={(event) => phoneHandler(event)}
-          value={isPhone}
-        />
-      </label>
+      <p className="error-field"></p>
+      <input
+        className="input"
+        type="tel"
+        id="tel"
+        name="tel"
+        placeholder="Телефон"
+        onBlur={(event) => blurHandler(event)}
+        onChange={(event) => phoneHandler(event)}
+        value={isPhone}
+      />
       <p className="error-field">{isPhoneBlur && isPhoneError ? isPhoneError : ''}</p>
       <button type="submit" className="submit" onClick={handleSubmit}>
         Хочу консультацию
       </button>
+      <label className="checkbox-wrapper">
+        Я согласен на обработку моих персональных данных
+        <input
+          type="checkbox"
+          id="checkbox"
+          name="checkbox"
+          onBlur={(event) => blurHandler(event)}
+          onChange={checkboxHandler}
+          checked={isChecked}
+        />
+        <span className="checkmark"></span>
+      </label>
+      <p className="error-field">{isCheckedBlur && isCheckedError ? isCheckedError : ''}</p>
     </form>
   );
 };
