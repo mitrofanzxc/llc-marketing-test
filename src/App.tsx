@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { SectionHero, SectionBenefits, Footer } from './sections';
+import { SectionHero, SectionBenefits, SectionForm, Footer } from './sections';
 
 const App: FC = () => {
   return (
@@ -7,6 +7,7 @@ const App: FC = () => {
       <SectionHero />
       <main>
         <SectionBenefits />
+        <SectionForm />
       </main>
       <Footer />
     </>

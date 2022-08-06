@@ -1,0 +1,68 @@
+@import '../../sass/Constants.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 610px;
+  height: 383px;
+  padding: 50px 25px;
+  background-color: $color-grey;
+  border-radius: 11.18px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  .primary-button {
+    width: 100%;
+    background-color: $color-orange;
+  }
+}
+
+.error-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $base * 3;
+  font-size: $fs-xs;
+  font-weight: $fw-medium;
+  color: $color-orange;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 21.93px 0 24.1px 34px;
+  font-size: 20px;
+  font-weight: $fw-regular;
+  line-height: 23.7px;
+  color: $color-blue-06;
+  background-color: $color-white;
+  border-radius: 8px;
+}
+
+.input-phone__label {
+  display: flex;
+  flex-direction: column;
+  gap: $base * 2;
+  width: 100%;
+}
+
+.submit {
+  width: 100%;
+  padding: 21.93px 0 24.1px 34px;
+  font-size: 27px;
+  font-weight: $fw-medium;
+  line-height: 32px;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-orange;
+  border-radius: 8px;
+  transition: all $transition-01 ease-in;
+
+  &:hover {
+    background-color: $color-orange-medium;
+  }
+
+  &:active {
+    background-color: $color-orange-light;
+  }
+}
