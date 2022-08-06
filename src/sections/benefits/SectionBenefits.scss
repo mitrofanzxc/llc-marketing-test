@@ -1,0 +1,24 @@
+@import '../../sass/Constants.scss';
+
+.benefits {
+  background-image: url('../../images/benefits-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.progress-bars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 124px;
+}
+
+.septics {
+  padding-top: 120px;
+  padding-bottom: 44px;
+
+  h2 {
+    width: 58%;
+    margin: 0 auto;
+  }
+}

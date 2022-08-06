@@ -1,11 +1,13 @@
 import { FC } from 'react';
-import { SectionHero, Footer } from './sections';
+import { SectionHero, SectionBenefits, Footer } from './sections';
 
 const App: FC = () => {
   return (
     <>
       <SectionHero />
-      <main>main</main>
+      <main>
+        <SectionBenefits />
+      </main>
       <Footer />
     </>
   );

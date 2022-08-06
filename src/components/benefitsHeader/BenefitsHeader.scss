@@ -15,6 +15,21 @@
   border: 1px solid $color-grey-light;
   border-radius: 4px;
   height: 100%;
+
+  .engineer {
+    width: 118px;
+    height: 73px;
+  }
+
+  .mounting {
+    width: 207px;
+    height: 73px;
+  }
+
+  .payment {
+    width: 106px;
+    height: 69px;
+  }
 }
 
 .benefits-header__icon {
@@ -25,19 +40,4 @@
 .benefits-header__description {
   font-size: 16px;
   font-size: $fw-regular;
-}
-
-.engineer {
-  width: 118px;
-  height: 73px;
-}
-
-.mounting {
-  width: 207px;
-  height: 73px;
-}
-
-.payment {
-  width: 106px;
-  height: 69px;
 }

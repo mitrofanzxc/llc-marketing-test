@@ -1,1 +1,46 @@
 @import '../../sass/Constants.scss';
+
+.circle {
+  position: relative;
+  width: 264px;
+  height: 264px;
+  padding: 0 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    background-color: $color-white;
+    background-image: url('../../images/benefits-bg.jpg');
+    border-radius: 50%;
+  }
+
+  h2 {
+    position: relative;
+  }
+}
+
+.dot {
+  position: relative;
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.progress-bar__description {
+  position: relative;
+  font-size: 20px;
+  font-weight: $fw-regular;
+  line-height: 23.7px;
+  margin-top: 11px;
+}

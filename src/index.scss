@@ -198,7 +198,7 @@ strong {
 }
 
 .fw_medium {
-  font-weight: $fw-medium;
+  font-weight: $fw-medium !important;
 }
 
 .fw_semi-bold {
@@ -211,6 +211,10 @@ strong {
 
 .text-align_center {
   text-align: center;
+}
+
+.color_orange {
+  color: $color-orange;
 }
 
 .color_blue {

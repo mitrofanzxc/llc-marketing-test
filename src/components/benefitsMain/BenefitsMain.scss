@@ -5,11 +5,10 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  width: 24%;
+  width: 23%;
   height: 206px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   text-align: center;
+  background-color: $color-white;
   border-radius: 4px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 
@@ -21,13 +20,61 @@
     width: 100%;
   }
 
-  h4 {
-    padding-left: 30px;
-    padding-right: 30px;
+  img {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-}
 
-.benefits-main__icon {
-  width: 83px;
-  height: 83px;
+  .ground {
+    width: 157px;
+    height: 93px;
+    margin-bottom: 12px;
+  }
+
+  .water {
+    width: 157px;
+    height: 93px;
+    margin-bottom: 12px;
+  }
+
+  .leaf {
+    width: 157px;
+    height: 135px;
+    margin-top: 0;
+    margin-bottom: -10px;
+  }
+
+  .earth {
+    width: 83px;
+    height: 83px;
+    margin-bottom: 22px;
+  }
+
+  .ecoFriendly {
+    width: 138px;
+    height: 89px;
+  }
+
+  .worker {
+    width: 83px;
+    height: 83px;
+  }
+
+  .quality {
+    width: 83px;
+    height: 83px;
+  }
+
+  .bestPrice {
+    width: 83px;
+    height: 83px;
+  }
+
+  h4 {
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 20px;
+    font-weight: $fw-medium;
+    line-height: 24px;
+  }
 }
