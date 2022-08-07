@@ -2,14 +2,14 @@ import { FC } from 'react';
 import { BenefitsMain } from '../../components/benefitsMain/BenefitsMain';
 import { ProgressBar } from '../../components/progressBar/ProgressBar';
 
-import ground from '../../images/ground.png';
-import water from '../../images/water.png';
-import leaf from '../../images/leaf.png';
-import earth from '../../images/earth.png';
-import ecoFriendly from '../../images/eco-friendly.png';
-import worker from '../../images/worker.png';
-import quality from '../../images/quality.png';
-import bestPrice from '../../images/best-price.png';
+import ground from '../../images/icons/ground.png';
+import water from '../../images/icons/water.png';
+import leaf from '../../images/icons/leaf.png';
+import earth from '../../images/icons/earth.png';
+import ecoFriendly from '../../images/icons/eco-friendly.png';
+import worker from '../../images/icons/worker.png';
+import quality from '../../images/icons/quality.png';
+import bestPrice from '../../images/icons/best-price.png';
 import './SectionBenefits.scss';
 
 const SectionBenefits: FC = () => {

@@ -43,6 +43,10 @@ body {
   font-family: 'Rubik', sans-serif;
   color: $color-black;
   background-color: $color-white;
+  background-image: url('./images/body-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2,

@@ -3,9 +3,9 @@ import { Header } from '../header/Header';
 import { BenefitsHeader } from '../../components/benefitsHeader/BenefitsHeader';
 import { PrimaryButton } from '../../components/buttons';
 
-import engineer from '../../images/engineer.png';
-import mounting from '../../images/mounting.png';
-import payment from '../../images/payment.png';
+import engineer from '../../images/icons/engineer.png';
+import mounting from '../../images/icons/mounting.png';
+import payment from '../../images/icons/payment.png';
 import sewerage from '../../images/sewerage.png';
 import './SectionHero.scss';
 

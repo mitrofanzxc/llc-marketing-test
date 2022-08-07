@@ -5,7 +5,10 @@ import {
   SectionForm,
   SectionCatalog,
   SectionBannerFirst,
+  SectionSteps,
+  SectionExamples,
   SectionBannerSecond,
+  SectionReviews,
   Footer,
 } from './sections';
 
@@ -18,7 +21,10 @@ const App: FC = () => {
         <SectionForm />
         <SectionCatalog />
         <SectionBannerFirst />
+        <SectionSteps />
+        <SectionExamples />
         <SectionBannerSecond />
+        <SectionReviews />
       </main>
       <Footer />
     </>
