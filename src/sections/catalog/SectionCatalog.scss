@@ -17,7 +17,7 @@ input[type='radio'] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 331px;
+  width: 23%;
   height: 68px;
   font-size: 24px;
   font-weight: $fw-medium;
@@ -59,7 +59,8 @@ input[type='radio']:checked + label {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0 35px 44px 35px;
+  width: 26%;
+  padding: 35px 35px 44px 35px;
   text-align: center;
   background-color: $color-white;
   border-radius: 4px;
@@ -74,27 +75,31 @@ input[type='radio']:checked + label {
   }
 
   img {
-    width: 200px;
-    height: 313px;
+    width: 100%;
+    height: auto;
   }
 
   h3 {
     margin-top: -14px;
   }
+
+  .catalog-button {
+    width: 100%;
+  }
 }
 
 .single {
-  width: 403px;
+  // width: 403px;
   height: 544px;
 }
 
 .double {
-  width: 403px;
+  // width: 403px;
   height: 570px;
 }
 
 .triple {
-  width: 487px;
+  // width: 487px;
   height: 529px;
 }
 

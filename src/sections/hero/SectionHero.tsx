@@ -12,6 +12,7 @@ import './SectionHero.scss';
 const SectionHero: FC = () => {
   return (
     <section className="section-hero__bg-first">
+      <div className="section-hero__bg-second" />
       <Header />
       <div className="wrapper-hero section-hero__wrapper">
         <h1>

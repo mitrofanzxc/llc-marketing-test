@@ -27,7 +27,7 @@ const SectionCatalog: FC = () => {
   }, []);
 
   return (
-    <section className="section-catalog__bg">
+    <section>
       <div className="wrapper">
         <div className="buttons">
           <input

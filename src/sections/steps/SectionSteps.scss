@@ -1,1 +1,36 @@
 @import '../../sass/Constants.scss';
+
+.stages {
+  margin-top: 172px;
+
+  h2 {
+    width: 56%;
+    margin: 0 auto;
+  }
+}
+
+.steps-wrapper_first {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 82px;
+}
+
+.steps-wrapper_second {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  column-gap: 188px;
+  margin-top: 90px;
+  margin-right: 144px;
+
+  .step {
+    &:nth-child(1) {
+      width: 323px;
+    }
+    
+    &:nth-child(2) {
+      width: 323px;
+    }
+  }
+}
