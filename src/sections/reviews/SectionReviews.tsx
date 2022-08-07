@@ -24,8 +24,8 @@ const SectionReviews: FC = () => {
           }}
           mousewheel={true}
           keyboard={true}
-          slidesPerView={3}
-          spaceBetween={100}
+          slidesPerView={2}
+          spaceBetween={200}
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
           className="mySwiper"
         >
