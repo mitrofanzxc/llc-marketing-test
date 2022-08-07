@@ -49,7 +49,8 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "redux": "^4.2.0",
-    "sass": "^1.54.0"
+    "sass": "^1.54.0",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
