@@ -1,5 +1,13 @@
 import { FC } from 'react';
-import { SectionHero, SectionBenefits, SectionForm, SectionCatalog, Footer } from './sections';
+import {
+  SectionHero,
+  SectionBenefits,
+  SectionForm,
+  SectionCatalog,
+  SectionBannerFirst,
+  SectionBannerSecond,
+  Footer,
+} from './sections';
 
 const App: FC = () => {
   return (
@@ -9,6 +17,8 @@ const App: FC = () => {
         <SectionBenefits />
         <SectionForm />
         <SectionCatalog />
+        <SectionBannerFirst />
+        <SectionBannerSecond />
       </main>
       <Footer />
     </>

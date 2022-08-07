@@ -64,12 +64,12 @@ const SectionCatalog: FC = () => {
                 <button className="catalog-button order-button">Заказать</button>
               </li>
               <li className="catalog-item single">
-                <img src={septic3} alt="septic2" className="" />
+                <img src={septic3} alt="septic3" className="" />
                 <h3>Септик из 3-х колец КС 15-9</h3>
                 <button className="catalog-button order-button">Заказать</button>
               </li>
               <li className="catalog-item single">
-                <img src={septic3} alt="septic2" className="" />
+                <img src={septic3} alt="septic3" className="" />
                 <h3>Септик из 3-х колец КС 10-9</h3>
                 <button className="catalog-button order-button">Заказать</button>
               </li>
@@ -87,22 +87,22 @@ const SectionCatalog: FC = () => {
             </p>
             <ul className="catalog-items">
               <li className="catalog-item double">
-                <img src={septic2x} alt="septic2" className="" />
+                <img src={septic2x} alt="septic2x" className="" />
                 <h3>Септик из 2-х колодцев по 2 кольца КС 10-9</h3>
                 <button className="catalog-button order-button">Заказать</button>
               </li>
               <li className="catalog-item double">
-                <img src={septic2x} alt="septic2" className="" />
+                <img src={septic2x} alt="septic2x" className="" />
                 <h3>Септик из 2-х колодцев по 2 кольца КС 15-9</h3>
                 <button className="catalog-button order-button">Заказать</button>
               </li>
               <li className="catalog-item double">
-                <img src={septic2x} alt="septic2" className="" />
+                <img src={septic2x} alt="septic2x" className="" />
                 <h3>Септик из 2-х колодцев по 3 кольца КС 15-9</h3>
                 <button className="catalog-button order-button">Заказать</button>
               </li>
               <li className="catalog-item double">
-                <img src={septic2x} alt="septic2" className="" />
+                <img src={septic2x} alt="septic2x" className="" />
                 <h3>Септик из 2-х колодцев по 3 кольца КС 10-9</h3>
                 <button className="catalog-button order-button">Заказать</button>
               </li>
@@ -117,7 +117,7 @@ const SectionCatalog: FC = () => {
             </p>
             <ul className="catalog-items">
               <li className="catalog-item double">
-                <img src={septic3x} alt="septic2" className="" />
+                <img src={septic3x} alt="septic3x" className="" />
                 <h3>Септик из 3-х колодцев по 3 кольца КС 15-9</h3>
                 <button className="catalog-button order-button">Заказать</button>
               </li>

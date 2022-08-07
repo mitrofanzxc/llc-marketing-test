@@ -4,5 +4,16 @@ import { SectionHero } from './hero/SectionHero';
 import { SectionBenefits } from './benefits/SectionBenefits';
 import { SectionForm } from './form/SectionForm';
 import { SectionCatalog } from './catalog/SectionCatalog';
+import { SectionBannerFirst } from './bannerFirst/SectionBannerFirst';
+import { SectionBannerSecond } from './bannerSecond/SectionBannerSecond';
 
-export { Header, Footer, SectionHero, SectionBenefits, SectionForm, SectionCatalog };
+export {
+  Header,
+  Footer,
+  SectionHero,
+  SectionBenefits,
+  SectionForm,
+  SectionCatalog,
+  SectionBannerFirst,
+  SectionBannerSecond,
+};
