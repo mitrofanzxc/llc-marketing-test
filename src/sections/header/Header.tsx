@@ -10,7 +10,7 @@ const Header: FC = () => {
   return (
     <div className="wrapper-hero">
       <header data-testid="header" className="header">
-        <a href={main} className="logo">
+        <a href={main} className="logo color_green">
           Montajkolec.by
         </a>
         <nav className="nav">

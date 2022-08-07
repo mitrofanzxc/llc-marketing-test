@@ -3,7 +3,7 @@ import './SectionSteps.scss';
 
 const SectionSteps: FC = () => {
   return (
-    <section>
+    <section id="stages">
       <div className="wrapper">
         <h2 className="text-align_center">
           <strong>5 шагов</strong> как будет выполняться ваш заказ

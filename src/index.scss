@@ -39,6 +39,10 @@
 
 // === COMMON ===
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
   color: $color-black;
@@ -215,6 +219,14 @@ strong {
 
 .text-align_center {
   text-align: center;
+}
+
+.color_white {
+  color: $color-white;
+}
+
+.color_green {
+  color: $color-green;
 }
 
 .color_orange {

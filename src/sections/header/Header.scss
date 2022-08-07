@@ -13,7 +13,6 @@
   font-size: calcResponsiveSize(20, 35, 769, 1728);
   font-weight: $fw-bold;
   line-height: calcResponsiveSize(24, 41.48, 769, 1728);
-  color: $color-green;
 
   @media (max-width: $breakpoint-md-min) {
     font-size: calcResponsiveSize(20, 20, 1, 769);

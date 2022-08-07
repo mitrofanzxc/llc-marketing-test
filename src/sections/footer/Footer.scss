@@ -1,1 +1,35 @@
 @import '../../sass/Constants.scss';
+
+footer {
+  background-image: url('../../images/footer-bg.jpg');
+  backdrop-filter: blur(4px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-white;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 61px;
+
+  .nav {
+    margin-right: 25%;
+  }
+
+  .nav-wrapper {
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .nav-link {
+    font-weight: $fw-regular;
+  }
+}
+
+.requisites {
+  margin-top: 10px;
+}

@@ -1,4 +1,4 @@
-import { FC, useState, MouseEvent } from 'react';
+import { FC, useState, useEffect, MouseEvent } from 'react';
 import septic2 from '../../images/septic2.png';
 import septic2x from '../../images/septic2x.jpg';
 import septic3 from '../../images/septic3.png';
@@ -13,6 +13,18 @@ const SectionCatalog: FC = () => {
     const value = target.value as string;
     setCatalogSection(value);
   }
+
+  useEffect(() => {
+    localStorage.setItem('catalogSection', JSON.stringify(catalogSection));
+  }, [catalogSection]);
+
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('catalogSection') || '');
+    if (catalogSection) {
+      setCatalogSection(items);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <section className="section-catalog__bg">
@@ -51,7 +63,7 @@ const SectionCatalog: FC = () => {
           </label>
         </div>
         {catalogSection === 'Однокамерные' && (
-          <div className="catalog">
+          <div className="catalog" id="catalog">
             <p className="catalog-description">
               Изготовлены из бетонных колец, зарытых в одну яму. Они имеют небольшой объем,
               отстаивание сточных вод и разложение осадка в них происходит не так быстро. Поэтому
@@ -77,7 +89,7 @@ const SectionCatalog: FC = () => {
           </div>
         )}
         {catalogSection === 'Двухкамерные' && (
-          <div className="catalog">
+          <div className="catalog" id="catalog">
             <p className="catalog-description">
               Имеют несколько камер, в которых стоки разбавляются, отстаиваются, а получившийся
               органический осадок разлагается. Благодаря такой переработке, откачивать воду из
@@ -110,7 +122,7 @@ const SectionCatalog: FC = () => {
           </div>
         )}
         {catalogSection === 'Трехкамерные' && (
-          <div className="catalog">
+          <div className="catalog" id="catalog">
             <p className="catalog-description">
               Очень надежные, имеют максимальную производительность, поэтому отлично справляются с
               большим количеством сточных вод.
