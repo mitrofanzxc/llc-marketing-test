@@ -1,12 +1,14 @@
 @import '../../sass/Constants.scss';
 
 .form {
+  position: absolute;
+  top: 182px;
+  right: 105px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   width: 610px;
-  // height: 383px;
-  padding: 50px 25px;
+  padding: 50px 25px 35px 25px;
   background-color: $color-grey;
   border-radius: 11.18px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -21,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: $base * 6;
+  height: 15px;
   font-size: $fs-xxs;
   font-weight: $fw-medium;
   line-height: 21.33px;
@@ -50,7 +52,7 @@
 .checkbox-wrapper {
   display: block;
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-left: 35px;
   cursor: pointer;
   font-size: 18px;
@@ -90,7 +92,7 @@
 
 .submit {
   width: 100%;
-  padding: 21.93px 0 24.1px 34px;
+  padding: 20px 0;
   font-size: 27px;
   font-weight: $fw-medium;
   line-height: 32px;

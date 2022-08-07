@@ -1,9 +1,34 @@
 @import '../../sass/Constants.scss';
 
-.section-form_bg {
+.section-form__bg {
+  position: relative;
   background-color: $color-white;
 
-  h2 {
-    width: 59%;
+  .wrapper {
+    position: relative;
   }
+
+  h2 {
+    width: 780px;
+  }
+
+  h4 {
+    width: 547px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-black-06;
+  }
+}
+
+.section-form__example {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 57%;
+}
+
+.section-form__description {
+  padding-top: 114px;
+  padding-bottom: 100px;
 }

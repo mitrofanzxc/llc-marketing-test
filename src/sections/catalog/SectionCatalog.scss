@@ -1,0 +1,113 @@
+@import '../../sass/Constants.scss';
+
+.section-catalog__bg {
+  background-image: url('../../images/benefits-bg.jpg');
+  background-size: cover;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 auto;
+  padding-top: 672px;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.catalog-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 331px;
+  height: 68px;
+  font-size: 24px;
+  font-weight: $fw-medium;
+  line-height: 28.8px;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-green;
+  border-radius: 4px;
+  transition: all $transition-01 ease-in;
+}
+
+input[type='radio']:checked + label {
+  background-color: $color-orange-medium;
+}
+
+.catalog {
+  margin-top: 63px;
+}
+
+.catalog-description {
+  font-size: 25px;
+  font-weight: $fw-regular;
+  line-height: 35px;
+  color: $color-black;
+}
+
+.catalog-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 38px;
+  margin-top: 48px;
+}
+
+.catalog-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 35px 44px 35px;
+  text-align: center;
+  background-color: $color-white;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $breakpoint-lg-min) {
+    width: 49%;
+  }
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: 100%;
+  }
+
+  img {
+    width: 200px;
+    height: 313px;
+  }
+
+  h3 {
+    margin-top: -14px;
+  }
+}
+
+.single {
+  width: 403px;
+  height: 544px;
+}
+
+.double {
+  width: 403px;
+  height: 570px;
+}
+
+.triple {
+  width: 487px;
+  height: 529px;
+}
+
+.order-button {
+  &:hover {
+    background-color: $color-green-medium;
+  }
+
+  &:active {
+    background-color: $color-green-light;
+  }
+}
