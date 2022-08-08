@@ -17,13 +17,14 @@ footer {
   padding-top: 61px;
 
   .nav {
+    margin-top: 14px;
     margin-right: 25%;
   }
 
   .nav-wrapper {
     align-items: flex-start;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 28px;
   }
 
   .nav-link {
@@ -32,5 +33,39 @@ footer {
 }
 
 .requisites {
-  margin-top: 10px;
+  font-size: 20px;
+  font-weight: $fw-medium;
+  line-height: 23.7px;
+  margin-top: 17px;
+}
+
+.contacts {
+  width: 242px;
+}
+
+.location {
+  // display: flex;
+  // align-items: center;
+  // column-gap: 10px;
+  margin-top: 14px;
+}
+
+.location-icon__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 14px;
+}
+
+.location-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.location-adress {
+  width: 218px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 23.38px;
+  color: $color-white-06;
 }

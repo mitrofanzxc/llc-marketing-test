@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { PATHS } from '../../shared/paths';
+import location from '../../images/icons/location.svg';
 
 import './Footer.scss';
 
@@ -35,14 +36,28 @@ const Footer: FC = () => {
               </li>
             </ul>
           </nav>
-          <ul>
-            <li className="tel-wrapper">
-              <a href="tel:+375259033206" className="tel">{`+375 (25) 903-32-06`}</a>
-            </li>
-            <li className="tel-wrapper">
-              <a href="tel:+375336196476" className="tel">{`+375 (33) 619-64-76`}</a>
-            </li>
-          </ul>
+          <div className="contacts">
+            <ul>
+              <li className="tel-wrapper">
+                <a href="tel:+375259033206" className="tel">{`+375 (25) 903-32-06`}</a>
+              </li>
+              <li className="tel-wrapper">
+                <a href="tel:+375336196476" className="tel">{`+375 (33) 619-64-76`}</a>
+              </li>
+            </ul>
+            <a
+              href={`https://yandex.by/maps/-/CCUR56SPSB`}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="location"
+            >
+              <div className="location-icon__wrapper">
+                <img src={location} alt="location" className="location-icon" />
+                <p>Адрес</p>
+              </div>
+              <p className="location-adress">г. Минск, Набережная, 20/А, офис 501</p>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
