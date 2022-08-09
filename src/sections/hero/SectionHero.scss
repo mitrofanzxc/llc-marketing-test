@@ -77,10 +77,11 @@
   flex-wrap: wrap;
   column-gap: 3%;
   row-gap: calcResponsiveSize(32, 32, 1729, 3000);
-  margin-top: 81px;
+  margin-top: calcResponsiveSize(81, 81, 1729, 3000);
 
   @media (max-width: $breakpoint-xxl-min) {
     row-gap: calcResponsiveSize(20, 32, 769, 1728);
+    margin-top: calcResponsiveSize(30, 81, 769, 1728);
   }
 
   @media (max-width: $breakpoint-xl-min) {
@@ -93,9 +94,11 @@
 
   @media (max-width: $breakpoint-md-min) {
     row-gap: calcResponsiveSize(10, 20, 361, 769);
+    margin-top: calcResponsiveSize(20, 30, 361, 769);
   }
 
   @media (max-width: $breakpoint-xxs-min) {
     row-gap: calcResponsiveSize(10, 10, 1, 360);
+    margin-top: calcResponsiveSize(20, 20, 1, 360);
   }
 }

@@ -22,14 +22,16 @@
 
 .septics {
   padding-top: calcResponsiveSize(120, 120, 1729, 3000);
-  padding-bottom: 44px;
+  padding-bottom: calcResponsiveSize(44, 44, 1729, 3000);
 
   @media (max-width: $breakpoint-xxl-min) {
     padding-top: calcResponsiveSize(70, 120, 769, 1728);
+    padding-bottom: calcResponsiveSize(20, 44, 769, 1728);
   }
 
   @media (max-width: $breakpoint-md-min) {
     padding-top: calcResponsiveSize(40, 70, 361, 768);
+    padding-bottom: calcResponsiveSize(20, 20, 1, 768);
   }
 
   @media (max-width: $breakpoint-xxs-min) {
