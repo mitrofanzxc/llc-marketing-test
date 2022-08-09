@@ -2,7 +2,7 @@
 
 .form {
   position: absolute;
-  top: 182px;
+  top: calcResponsiveSize(182, 182, 1729, 3000);
   right: 105px;
   display: flex;
   justify-content: flex-start;
@@ -12,6 +12,18 @@
   background-color: $color-grey;
   border-radius: 11.18px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    top: calcResponsiveSize(214, 182, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    top: calcResponsiveSize(220, 214, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    top: calcResponsiveSize(220, 220, 1, 360);
+  }
 
   .primary-button {
     width: 100%;

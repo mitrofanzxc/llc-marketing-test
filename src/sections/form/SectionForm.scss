@@ -23,9 +23,26 @@
 
 .section-form__example {
   position: absolute;
-  top: 0;
+  top: calcResponsiveSize(0, 0, 1729, 3000);
   right: 0;
-  width: 57%;
+  width: calcResponsiveSize(997, 997, 1729, 3000);
+  height: calcResponsiveSize(915, 915, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    top: calcResponsiveSize(184, 0, 769, 1728);
+    width: calcResponsiveSize(503, 997, 769, 1728);
+    height: calcResponsiveSize(475, 915, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    top: calcResponsiveSize(184, 184, 361, 768);
+    width: calcResponsiveSize(503, 503, 361, 768);
+    height: calcResponsiveSize(475, 475, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-sm-min) {
+    display: none;
+  }
 }
 
 .section-form__description {
