@@ -57,7 +57,44 @@ const Footer: FC = () => {
               </div>
               <p className="location-adress">г. Минск, Набережная, 20/А, офис 501</p>
             </a>
+            <div className="messengers">
+              <p>мессенджеры</p>
+              <ul className="messengers-wrapper">
+                <li>
+                  <a
+                    href="https://t.me/montajkolec.by"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="messenger telegram"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://viber.com/montajkolec.by"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="messenger viber"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://whatsapp.com/montajkolec.by"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="messenger whatsapp"
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </div>
+      <div className="wrapper">
+        <div className="copyright-wrapper">
+          <p>©2022 компания Все права защищены</p>
+          <a href="#">
+            <p>Политика конфиденциальности</p>
+          </a>
         </div>
       </div>
     </footer>

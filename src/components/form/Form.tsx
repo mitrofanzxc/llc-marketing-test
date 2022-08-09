@@ -12,11 +12,9 @@ const Form: FC = () => {
   const [isFormSend, setIsFormSend] = useState<boolean>(false);
 
   const blurHandler = (event: FocusEvent<HTMLInputElement>) => {
-    const NAME = event.currentTarget.name;
-    switch (NAME) {
-      case 'tel':
-        setIsPhoneBlur(true);
-        break;
+    const target = event.target as HTMLInputElement;
+    const name = target.name as string;
+    switch (name) {
       case 'checkbox':
         setIsCheckedBlur(true);
         break;
@@ -24,18 +22,14 @@ const Form: FC = () => {
   };
 
   const phoneHandler = (event: ChangeEvent<HTMLInputElement>) => {
-    const VALUE = event.currentTarget.value;
-    setIsPhone(VALUE);
-    const result = /^(\+375|80) \((29|25|44|33|17)\) [0-9]{3}-[0-9]{2}-[0-9]{2}$/gm;
-    if (!result.test(String(VALUE).toLocaleLowerCase())) {
-      setIsPhoneError('Некорректно введен номер.');
-    } else {
-      setIsPhoneError('');
-    }
+    const target = event.target as HTMLInputElement;
+    const value = target.value as string;
+    setIsPhone(value);
   };
 
   const checkboxHandler = () => {
     setIsChecked(!isChecked);
+
     if (isChecked) {
       setIsCheckedError('Вы должны принять соглашение.');
     } else {
@@ -80,7 +74,7 @@ const Form: FC = () => {
 
   return (
     <form method="POST" className="form">
-      <input type="text" name="" id="" placeholder="Имя" className="input" />
+      <input type="text" name="name" id="name" placeholder="Имя" className="input" />
       <p className="error-field"></p>
       <input
         className="input"

@@ -1,13 +1,19 @@
 @import '../../sass/Constants.scss';
 
 footer {
-  margin-top: 114px;
+  margin-top: 108px;
   background-image: url('../../images/footer-bg.jpg');
   backdrop-filter: blur(4px);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: $color-white;
+
+  .wrapper {
+    &:first-child {
+      border-bottom: 1px solid $color-grey;
+    }
+  }
 }
 
 .footer-wrapper {
@@ -44,9 +50,6 @@ footer {
 }
 
 .location {
-  // display: flex;
-  // align-items: center;
-  // column-gap: 10px;
   margin-top: 14px;
 }
 
@@ -68,4 +71,48 @@ footer {
   font-size: 14px;
   line-height: 23.38px;
   color: $color-white-06;
+}
+
+.messengers {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  margin-top: 44px;
+  padding-bottom: 17px;
+}
+
+.messengers-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 14px;
+}
+
+.messenger {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.telegram {
+  background-image: url('../../images/icons/telegram.svg');
+}
+
+.viber {
+  background-image: url('../../images/icons/viber.svg');
+}
+
+.whatsapp {
+  background-image: url('../../images/icons/whatsapp.svg');
+}
+
+.copyright-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 14%;
+  padding: 32px 0;
 }
