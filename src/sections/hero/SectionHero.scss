@@ -2,16 +2,29 @@
 
 .section-hero__bg-first {
   position: relative;
+  height: calcResponsiveSize(890, 890, 1729, 3000);
   background-image: url('../../images/banner-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: $breakpoint-xxl-min) {
+    height: calcResponsiveSize(449, 890, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    height: calcResponsiveSize(640, 449, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    height: calcResponsiveSize(640, 640, 1, 360);
+  }
 }
 
 .section-hero__bg-second {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 46%;
   height: 100%;
   background-image: url('../../images/hero-bg.png');
   background-size: cover;
@@ -21,34 +34,68 @@
 .section-hero__wrapper {
   position: relative;
   padding-bottom: 171px;
+
+  .primary-button {
+    top: 88px;
+  }
 }
 
 .sewerage {
   position: absolute;
-  top: -83px;
-  right: 105px;
-  width: 38%;
-  height: auto;
+  top: calcResponsiveSize(-83, -83, 1729, 3000);
+  right: calcResponsiveSize(105, 105, 1729, 3000);
+  width: calcResponsiveSize(663.41, 663.41, 1729, 3000);
+  height: calcResponsiveSize(742, 742, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    top: calcResponsiveSize(-58, -83, 769, 1728);
+    right: calcResponsiveSize(0, 105, 769, 1728);
+    width: calcResponsiveSize(261, 663.41, 769, 1728);
+    height: calcResponsiveSize(269, 742, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    right: calcResponsiveSize(0, 0, 1, 768);
+    width: calcResponsiveSize(261, 261, 1, 768);
+    height: calcResponsiveSize(269, 269, 1, 768);
+  }
 }
 
 .benefits-header__wrapper {
   position: relative;
+  top: 38px;
   z-index: 2;
   display: flex;
   align-items: center;
   column-gap: 24px;
-  margin-top: 38px;
 }
 
 .benefits-main__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  row-gap: calcResponsiveSize(20, 32, 769, 1728);
+  column-gap: 3%;
+  row-gap: calcResponsiveSize(32, 32, 1729, 3000);
   margin-top: 81px;
 
+  @media (max-width: $breakpoint-xxl-min) {
+    row-gap: calcResponsiveSize(20, 32, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-xl-min) {
+    column-gap: 3.5%;
+  }
+
+  @media (max-width: $breakpoint-lg-min) {
+    column-gap: 2%;
+  }
+
   @media (max-width: $breakpoint-md-min) {
-    row-gap: calcResponsiveSize(10, 20, 1, 769);
+    row-gap: calcResponsiveSize(10, 20, 361, 769);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    row-gap: calcResponsiveSize(10, 10, 1, 360);
   }
 }

@@ -92,7 +92,7 @@ const Footer: FC = () => {
       <div className="wrapper">
         <div className="copyright-wrapper">
           <p>©2022 компания Все права защищены</p>
-          <a href="#">
+          <a href="#" className="privacy-policy">
             <p>Политика конфиденциальности</p>
           </a>
         </div>

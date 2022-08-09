@@ -2,8 +2,9 @@
 
 .circle {
   position: relative;
-  width: 264px;
-  height: 264px;
+  min-width: calcResponsiveSize(264, 264, 1729, 3000);
+  width: calcResponsiveSize(264, 264, 1729, 3000);
+  height: calcResponsiveSize(264, 264, 1729, 3000);
   padding: 0 22px;
   border-radius: 50%;
   display: flex;
@@ -19,7 +20,20 @@
     width: 95%;
     background-color: $color-white;
     background-image: url('../../images/body-bg.jpg');
+    backdrop-filter: blur(4px);
     border-radius: 50%;
+  }
+
+  @media (max-width: $breakpoint-xxl-min) {
+    min-width: calcResponsiveSize(230, 264, 769, 1728);
+    width: calcResponsiveSize(230, 264, 769, 1728);
+    height: calcResponsiveSize(230, 264, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    min-width: calcResponsiveSize(230, 230, 1, 768);
+    width: calcResponsiveSize(230, 230, 1, 768);
+    height: calcResponsiveSize(230, 230, 1, 768);
   }
 
   h2 {
