@@ -12,29 +12,32 @@
 .benefits-header_second {
   display: flex;
   align-items: center;
+  padding-top: calcResponsiveSize(26, 26, 1729, 3000);
+  padding-right: calcResponsiveSize(4, 4, 1729, 3000);
+  padding-bottom: calcResponsiveSize(26, 26, 1729, 3000);
+  padding-left: calcResponsiveSize(22, 22, 1729, 3000);
   border: 1px solid $color-grey-light;
   border-radius: 4px;
   height: 100%;
 
-  .engineer {
-    width: 118px;
-    height: 73px;
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-top: calcResponsiveSize(20, 26, 769, 1728);
+    padding-right: calcResponsiveSize(4, 4, 769, 1728);
+    padding-bottom: calcResponsiveSize(20, 26, 769, 1728);
+    padding-left: calcResponsiveSize(4, 22, 769, 1728);
   }
 
-  .mounting {
-    width: 207px;
-    height: 73px;
-  }
-
-  .payment {
-    width: 106px;
-    height: 69px;
+  @media (max-width: $breakpoint-md-min) {
+    padding-top: calcResponsiveSize(20, 20, 1, 768);
+    padding-right: calcResponsiveSize(4, 4, 1, 768);
+    padding-bottom: calcResponsiveSize(20, 20, 1, 768);
+    padding-left: calcResponsiveSize(4, 4, 1, 768);
   }
 }
 
 .benefits-header__icon {
-  margin-left: 17px;
-  margin-right: 17px;
+  width: 106px;
+  height: 69px;
 }
 
 .benefits-header__description {

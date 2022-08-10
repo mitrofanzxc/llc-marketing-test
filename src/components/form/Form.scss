@@ -7,7 +7,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width: 610px;
+  width: calcResponsiveSize(610, 610, 1729, 3000);
   padding: 50px 25px 35px 25px;
   background-color: $color-grey;
   border-radius: 11.18px;
@@ -15,10 +15,18 @@
 
   @media (max-width: $breakpoint-xxl-min) {
     top: calcResponsiveSize(214, 182, 769, 1728);
+    width: calcResponsiveSize(478, 610, 769, 1728);
   }
 
   @media (max-width: $breakpoint-md-min) {
     top: calcResponsiveSize(220, 214, 361, 768);
+    width: calcResponsiveSize(320, 478, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xs-min) {
+    right: 20px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   @media (max-width: $breakpoint-xxs-min) {

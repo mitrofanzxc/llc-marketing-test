@@ -20,21 +20,21 @@ footer {
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 61px;
+}
 
-  .nav {
-    margin-top: 14px;
-    margin-right: 25%;
-  }
+.nav-footer {
+  margin-top: 14px;
+  margin-right: 25%;
+}
 
-  .nav-wrapper {
-    align-items: flex-start;
-    flex-direction: column;
-    row-gap: 28px;
-  }
+.nav-footer__wrapper {
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 28px;
+}
 
-  .nav-link {
-    font-weight: $fw-regular;
-  }
+.nav-footer__link {
+  font-weight: $fw-regular;
 }
 
 .requisites {

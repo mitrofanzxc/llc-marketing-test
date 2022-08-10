@@ -73,7 +73,7 @@ const Form: FC = () => {
   }, [isPhoneError, isCheckedError]);
 
   return (
-    <form method="POST" className="form">
+    <form method="post" className="form">
       <input type="text" name="name" id="name" placeholder="Имя" className="input" />
       <p className="error-field"></p>
       <input

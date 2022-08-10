@@ -1,6 +1,7 @@
 @import '../../../sass/Constants.scss';
 
 .burger {
+  position: relative;
   display: none;
   width: 16px;
   height: 16px;
@@ -9,7 +10,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 4;
+  z-index: 5;
 
   @media (max-width: $breakpoint-sm-max) {
     display: block;

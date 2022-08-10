@@ -17,20 +17,20 @@ const Footer: FC = () => {
             </a>
             <p className="requisites">Реквизиты</p>
           </div>
-          <nav className="nav">
-            <ul className="nav-wrapper">
+          <nav className="nav-footer">
+            <ul className="nav-footer__wrapper">
               <li>
-                <a href={catalog} className="nav-link">
+                <a href={catalog} className="nav-footer__link">
                   Каталог
                 </a>
               </li>
               <li>
-                <a href={reviews} className="nav-link">
+                <a href={reviews} className="nav-footer__link">
                   Отзывы
                 </a>
               </li>
               <li>
-                <a href={stages} className="nav-link">
+                <a href={stages} className="nav-footer__link">
                   Этапы работ
                 </a>
               </li>

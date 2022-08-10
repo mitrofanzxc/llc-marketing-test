@@ -104,7 +104,7 @@ svg {
 
 .wrapper-hero {
   position: relative;
-  z-index: 2;
+  // z-index: 2;
   max-width: 1728px;
   margin-left: auto;
   margin-right: auto;
@@ -156,9 +156,14 @@ h1 {
 }
 
 h2 {
-  font-size: calcResponsiveSize(32, 40, 769, 1728);
+  font-size: calcResponsiveSize(40, 40, 1729, 3000);
   font-weight: $fw-semi-bold;
-  line-height: calcResponsiveSize(38.4, 47.4, 769, 1728);
+  line-height: calcResponsiveSize(47.4, 47.4, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    font-size: calcResponsiveSize(32, 40, 769, 1728);
+    line-height: calcResponsiveSize(38.4, 47.4, 769, 1728);
+  }
 
   @media (max-width: $breakpoint-md-min) {
     font-size: calcResponsiveSize(24, 32, 361, 768);
@@ -173,9 +178,14 @@ h2 {
 }
 
 h3 {
-  font-size: calcResponsiveSize(24, 36, 769, 1728);
+  font-size: calcResponsiveSize(36, 36, 1729, 3000);
   font-weight: $fw-medium;
-  line-height: calcResponsiveSize(28.8, 30, 769, 1728);
+  line-height: calcResponsiveSize(30, 30, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    font-size: calcResponsiveSize(24, 36, 769, 1728);
+    line-height: calcResponsiveSize(28.8, 30, 769, 1728);
+  }
 
   @media (max-width: $breakpoint-md-min) {
     font-size: calcResponsiveSize(20, 24, 361, 768);
@@ -189,28 +199,35 @@ h3 {
 }
 
 h4 {
-  font-size: calcResponsiveSize(24, 24, 1, 1728);
+  font-size: calcResponsiveSize(27, 27, 1729, 3000);
   font-weight: $fw-medium;
-  line-height: calcResponsiveSize(24, 24, 1, 1728);
+  line-height: calcResponsiveSize(32, 32, 1729, 3000);
 
-  // font-size: calcResponsiveSize(20, 27, 769, 1728);
-  // line-height: calcResponsiveSize(24, 32, 769, 1728);
+  @media (max-width: $breakpoint-xxl-min) {
+    font-size: calcResponsiveSize(20, 27, 769, 1728);
+    line-height: calcResponsiveSize(24, 32, 769, 1728);
+  }
 
-  // @media (max-width: $breakpoint-md-min) {
-  //   font-size: calcResponsiveSize(15, 20, 361, 768);
-  //   line-height: calcResponsiveSize(18, 24, 361, 768);
-  // }
+  @media (max-width: $breakpoint-md-min) {
+    font-size: calcResponsiveSize(15, 20, 361, 768);
+    line-height: calcResponsiveSize(18, 24, 361, 768);
+  }
 
-  // @media (max-width: $breakpoint-xxs-min) {
-  //   font-size: calcResponsiveSize(15, 15, 1, 360);
-  //   line-height: calcResponsiveSize(18, 18, 1, 360);
-  // }
+  @media (max-width: $breakpoint-xxs-min) {
+    font-size: calcResponsiveSize(15, 15, 1, 360);
+    line-height: calcResponsiveSize(18, 18, 1, 360);
+  }
 }
 
 h5 {
-  font-size: calcResponsiveSize(15, 22, 769, 1728);
+  font-size: calcResponsiveSize(22, 22, 1729, 3000);
   font-weight: $fw-regular;
-  line-height: calcResponsiveSize(18, 30.8, 769, 1728);
+  line-height: calcResponsiveSize(30.8, 30.8, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    font-size: calcResponsiveSize(15, 22, 769, 1728);
+    line-height: calcResponsiveSize(18, 30.8, 769, 1728);
+  }
 
   @media (max-width: $breakpoint-md-min) {
     font-size: calcResponsiveSize(15, 15, 1, 768);
