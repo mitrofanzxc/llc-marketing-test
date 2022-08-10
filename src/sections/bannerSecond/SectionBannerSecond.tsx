@@ -3,10 +3,10 @@ import './SectionBannerSecond.scss';
 
 const SectionBannerSecond: FC = () => {
   return (
-    <section className="section-hero__bg-first section-banner_second">
+    <section className="section-banner_bg section-banner_second">
       <div className="wrapper">
         <div className="banner-wrapper">
-          <h2>
+          <h2 className="section-banner__description">
             Хочешь так-же?
             <br />
             Жми на кнопку и заказывай

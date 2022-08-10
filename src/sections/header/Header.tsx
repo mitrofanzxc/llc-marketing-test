@@ -1,5 +1,8 @@
 import { FC } from 'react';
 import { PATHS } from '../../shared/paths';
+import { Burger } from '../../components/buttons';
+import { useAppDispatch, useAppSelector } from '../../app/hooks';
+import { closeBurger } from '../../features/burgerHandler';
 
 import phone from '../../images/icons/phone.png';
 import './Header.scss';
@@ -7,26 +10,29 @@ import './Header.scss';
 const Header: FC = () => {
   const { main, catalog, reviews, stages } = PATHS;
 
+  const isBurgerOpen = useAppSelector(({ burgerHandler }) => burgerHandler.isBurgerOpen);
+  const dispatch = useAppDispatch();
+
   return (
     <div className="wrapper-hero">
       <header data-testid="header" className="header">
         <a href={main} className="logo color_green">
           Montajkolec.by
         </a>
-        <nav className="nav">
+        <nav className={`nav ${isBurgerOpen ? 'nav_visible' : ''}`}>
           <ul className="nav-wrapper">
             <li>
-              <a href={catalog} className="nav-link">
+              <a href={catalog} className="nav-link" onClick={() => dispatch(closeBurger())}>
                 Каталог
               </a>
             </li>
             <li>
-              <a href={reviews} className="nav-link">
+              <a href={reviews} className="nav-link" onClick={() => dispatch(closeBurger())}>
                 Отзывы
               </a>
             </li>
             <li>
-              <a href={stages} className="nav-link">
+              <a href={stages} className="nav-link" onClick={() => dispatch(closeBurger())}>
                 Этапы работ
               </a>
             </li>
@@ -42,6 +48,7 @@ const Header: FC = () => {
             </li>
           </ul>
         </nav>
+        <Burger />
       </header>
     </div>
   );

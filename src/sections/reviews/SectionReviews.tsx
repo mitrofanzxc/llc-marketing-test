@@ -26,6 +26,14 @@ const SectionReviews: FC = () => {
           slidesPerView={2}
           spaceBetween={107}
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          breakpoints={{
+            993: {
+              slidesPerView: 2,
+            },
+            1: {
+              slidesPerView: 1,
+            },
+          }}
           className="mySwiper"
         >
           <SwiperSlide className="review-slider__item">

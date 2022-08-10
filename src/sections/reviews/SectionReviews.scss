@@ -46,9 +46,15 @@
 
 .swiper {
   position: relative;
-  padding: 0 200px;
   margin-top: 72px;
+  padding-right: calcResponsiveSize(208, 208, 1729, 3000);
+  padding-left: calcResponsiveSize(208, 208, 1729, 3000);
   padding-bottom: 72px;
+
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-right: calcResponsiveSize(68, 200, 769, 1728);
+    padding-left: calcResponsiveSize(68, 200, 769, 1728);
+  }
 }
 
 .swiper-pagination-bullet {
@@ -75,6 +81,10 @@
   &::after {
     display: none;
   }
+
+  @media (max-width: $breakpoint-sm-max) {
+    display: none;
+  }
 }
 
 .swiper-button-next {
@@ -87,6 +97,10 @@
   background-repeat: no-repeat;
 
   &::after {
+    display: none;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
     display: none;
   }
 }

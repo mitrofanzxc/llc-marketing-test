@@ -1,0 +1,57 @@
+@import '../../../sass/Constants.scss';
+
+.burger {
+  display: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 4;
+
+  @media (max-width: $breakpoint-sm-max) {
+    display: block;
+  }
+}
+
+.burger-bar {
+  width: 16px;
+  height: 2px;
+  margin: $base 0 0 0;
+  border-radius: 16px;
+  transition: all $transition-02 linear;
+  background-color: $color-black;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.burger_visible {
+  .burger-bar {
+    &:nth-child(1) {
+      transform: translate(0px, 4px) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      transform: translate(0px, -2px) rotate(-45deg);
+    }
+  }
+}
+
+.shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-black-06;
+}
+
+.shadow_active {
+  display: block;
+}
