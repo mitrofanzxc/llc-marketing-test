@@ -36,7 +36,17 @@
   padding-bottom: 171px;
 
   .primary-button {
-    top: 88px;
+    top: calcResponsiveSize(88, 88, 1729, 3000);
+
+    @media (max-width: $breakpoint-xxl-min) {
+      top: calcResponsiveSize(120, 88, 769, 1728);
+    }
+
+    @media (max-width: $breakpoint-md-min) {
+      top: 168px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -63,11 +73,20 @@
 
 .benefits-header__wrapper {
   position: relative;
-  top: 38px;
+  top: calcResponsiveSize(38, 38, 1729, 3000);
   z-index: 2;
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  column-gap: calcResponsiveSize(24, 24, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    top: calcResponsiveSize(90, 38, 769, 1728);
+    column-gap: calcResponsiveSize(20, 24, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    flex-wrap: wrap;
+  }
 }
 
 .benefits-main__wrapper {
