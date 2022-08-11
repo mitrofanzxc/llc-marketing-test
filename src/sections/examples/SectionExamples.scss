@@ -1,7 +1,19 @@
 @import '../../sass/Constants.scss';
 
 .examples {
-  margin-top: 192px;
+  margin-top: calcResponsiveSize(164, 164, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(70, 164, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(40, 70, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(40, 40, 1, 360);
+  }
 }
 
 .slider {
