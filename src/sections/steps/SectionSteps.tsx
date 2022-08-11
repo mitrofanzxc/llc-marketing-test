@@ -15,7 +15,7 @@ const SectionSteps: FC = () => {
         <h2 className="text-align_center">
           <strong>5 шагов</strong> как будет выполняться ваш заказ
         </h2>
-        <div className="steps-wrapper_first">
+        <div className="steps-wrapper">
           <Step
             src={stepApplication}
             step="01"
@@ -40,19 +40,17 @@ const SectionSteps: FC = () => {
             header="Договор"
             description="Мы заключим договор. В договоре будут установлены сроки и гарантии"
           />
-        </div>
-        <div className="steps-wrapper_second">
-          <Step
-            src={stepInstallation}
-            step="06"
-            header="Монтаж канализации"
-            description="Бригада наших мастеров со специальным оборудованием производит монтаж и пусконаладку"
-          />
           <Step
             src={stepSaveMoney}
             step="05"
             header="Оплата по факту"
             description="Вы оплачиваете наши работы по договоры и пользуетесь канализацией "
+          />
+          <Step
+            src={stepInstallation}
+            step="06"
+            header="Монтаж канализации"
+            description="Бригада наших мастеров со специальным оборудованием производит монтаж и пусконаладку"
           />
         </div>
       </div>

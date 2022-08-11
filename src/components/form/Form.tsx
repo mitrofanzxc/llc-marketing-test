@@ -65,12 +65,12 @@ const Form: FC = () => {
   };
 
   useEffect(() => {
-    if (isPhoneError || isCheckedError) {
+    if (isCheckedError) {
       setIsFormValid(false);
     } else {
       setIsFormValid(true);
     }
-  }, [isPhoneError, isCheckedError]);
+  }, [isCheckedError]);
 
   return (
     <form method="post" className="form">
@@ -87,7 +87,12 @@ const Form: FC = () => {
         value={isPhone}
       />
       <p className="error-field">{isPhoneBlur && isPhoneError ? isPhoneError : ''}</p>
-      <button type="submit" className="submit" onClick={handleSubmit}>
+      <button
+        type="submit"
+        className="submit"
+        onClick={handleSubmit}
+        disabled={!isFormValid ? true : false}
+      >
         Хочу консультацию
       </button>
       <label className="checkbox-wrapper">

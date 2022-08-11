@@ -54,8 +54,23 @@ input[type='radio']:checked + label {
 }
 
 .catalog {
-  margin-top: 63px;
-  padding-bottom: 168px;
+  margin-top: calcResponsiveSize(63, 63, 1729, 3000);
+  padding-bottom: calcResponsiveSize(168, 168, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(30, 63, 769, 1728);
+    padding-bottom: calcResponsiveSize(70, 168, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(20, 30, 361, 768);
+    padding-bottom: calcResponsiveSize(40, 70, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(20, 20, 1, 360);
+    padding-bottom: calcResponsiveSize(40, 40, 1, 360);
+  }
 }
 
 .catalog-description {
@@ -70,14 +85,26 @@ input[type='radio']:checked + label {
   flex-wrap: wrap;
   column-gap: 9.5%;
   row-gap: 38px;
-  margin-top: 48px;
+  margin-top: calcResponsiveSize(47, 47, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(30, 47, 769, 1728);
+  }
 
   @media (max-width: $breakpoint-lg-min) {
     column-gap: 3.5%;
   }
 
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(20, 30, 361, 768);
+  }
+
   @media (max-width: $breakpoint-sm-max) {
     column-gap: 1%;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(20, 20, 1, 360);
   }
 }
 

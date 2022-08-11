@@ -1,5 +1,56 @@
 @import '../../sass/Constants.scss';
 
+.step-wrapper {
+  width: 16%;
+
+  @media (max-width: $breakpoint-xl-min) {
+    width: 20%;
+  }
+}
+
+.step-wrapper_01 {
+  order: 1;
+}
+
+.step-wrapper_02 {
+  order: 2;
+}
+
+.step-wrapper_03 {
+  order: 3;
+}
+
+.step-wrapper_04 {
+  order: 4;
+
+  @media (max-width: $breakpoint-xl-min) {
+    order: 6;
+  }
+}
+
+.step-wrapper_05 {
+  width: 31%;
+  order: 6;
+
+  @media (max-width: $breakpoint-xl-min) {
+    width: 20%;
+    order: 5;
+  }
+}
+
+.step-wrapper_06 {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  order: 5;
+
+  @media (max-width: $breakpoint-xl-min) {
+    justify-content: flex-start;
+    width: 20%;
+    order: 4;
+  }
+}
+
 .step {
   position: relative;
   display: flex;

@@ -1,7 +1,19 @@
 @import '../../sass/Constants.scss';
 
 .stages {
-  margin-top: 172px;
+  margin-top: calcResponsiveSize(164, 164, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(70, 164, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(40, 70, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(40, 40, 1, 360);
+  }
 
   h2 {
     width: 56%;
@@ -9,28 +21,16 @@
   }
 }
 
-.steps-wrapper_first {
+.steps-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 12%;
+  row-gap: 20px;
   margin-top: 82px;
-}
 
-.steps-wrapper_second {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  column-gap: 188px;
-  margin-top: 90px;
-  margin-right: 144px;
-
-  .step {
-    &:nth-child(1) {
-      width: 323px;
-    }
-    
-    &:nth-child(2) {
-      width: 323px;
-    }
+  @media (max-width: $breakpoint-xl-min) {
+    column-gap: 17%;
   }
 }
