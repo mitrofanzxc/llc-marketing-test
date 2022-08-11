@@ -34,20 +34,6 @@
 .section-hero__wrapper {
   position: relative;
   padding-bottom: 171px;
-
-  // .primary-button {
-  //   top: calcResponsiveSize(88, 88, 1729, 3000);
-
-  //   @media (max-width: $breakpoint-xxl-min) {
-  //     top: calcResponsiveSize(120, 88, 769, 1728);
-  //   }
-
-  //   @media (max-width: $breakpoint-md-min) {
-  //     top: 168px;
-  //     left: 50%;
-  //     transform: translate(-50%, -50%);
-  //   }
-  // }
 }
 
 .sewerage {
@@ -58,7 +44,7 @@
   height: calcResponsiveSize(742, 742, 1729, 3000);
 
   @media (max-width: $breakpoint-xxl-min) {
-    top: calcResponsiveSize(-58, -83, 769, 1728);
+    top: calcResponsiveSize(-50, -83, 769, 1728);
     right: calcResponsiveSize(0, 105, 769, 1728);
     width: calcResponsiveSize(261, 663.41, 769, 1728);
     height: calcResponsiveSize(269, 742, 769, 1728);
@@ -80,6 +66,7 @@
   row-gap: calcResponsiveSize(50, 50, 1729, 3000);
 
   @media (max-width: $breakpoint-xxl-min) {
+    top: calcResponsiveSize(92, 38, 769, 1728);
     row-gap: calcResponsiveSize(30, 50, 769, 1728);
   }
 
