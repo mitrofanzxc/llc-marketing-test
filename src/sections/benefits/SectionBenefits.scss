@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 20px;
   padding-top: calcResponsiveSize(122, 122, 1729, 3000);
   overflow: hidden;
 

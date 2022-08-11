@@ -6,7 +6,19 @@
   justify-content: space-between;
   width: 96%;
   margin: 0 auto;
-  padding-top: 672px;
+  padding-top: calcResponsiveSize(634, 634, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-top: calcResponsiveSize(396, 634, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-top: calcResponsiveSize(183, 396, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    padding-top: calcResponsiveSize(183, 183, 1, 360);
+  }
 }
 
 input[type='radio'] {
@@ -17,7 +29,7 @@ input[type='radio'] {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 23%;
+  width: calcResponsiveSize(331, 331, 1729, 3000);
   height: 68px;
   font-size: 24px;
   font-weight: $fw-medium;
@@ -27,6 +39,14 @@ input[type='radio'] {
   background-color: $color-green;
   border-radius: 4px;
   transition: all $transition-01 ease-in;
+
+  @media (max-width: $breakpoint-xxl-min) {
+    width: calcResponsiveSize(229, 331, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    width: 100%;
+  }
 }
 
 input[type='radio']:checked + label {
@@ -49,7 +69,7 @@ input[type='radio']:checked + label {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  column-gap: 20px;
   row-gap: 38px;
   margin-top: 48px;
 }
@@ -59,18 +79,22 @@ input[type='radio']:checked + label {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  width: 26%;
+  width: calcResponsiveSize(403, 403, 1729, 3000);
   padding: 35px 35px 44px 35px;
   text-align: center;
   background-color: $color-white;
   border-radius: 4px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
 
-  @media (max-width: $breakpoint-lg-min) {
-    width: 49%;
+  @media (max-width: $breakpoint-xxl-min) {
+    width: calcResponsiveSize(243, 403, 769, 1728);
   }
 
-  @media (max-width: $breakpoint-xs-min) {
+  @media (max-width: $breakpoint-md-min) {
+    width: calcResponsiveSize(320, 243, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
     width: 100%;
   }
 
@@ -89,17 +113,22 @@ input[type='radio']:checked + label {
 }
 
 .single {
-  // width: 403px;
-  height: 544px;
+  height: calcResponsiveSize(544, 544, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    height: calcResponsiveSize(340, 544, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    height: calcResponsiveSize(320, 340, 1, 768);
+  }
 }
 
 .double {
-  // width: 403px;
   height: 570px;
 }
 
 .triple {
-  // width: 487px;
   height: 529px;
 }
 

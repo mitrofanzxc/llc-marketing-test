@@ -3,12 +3,12 @@
 .primary-button {
   position: relative;
   z-index: 2;
-  width: 479px;
+  width: calcResponsiveSize(479, 479, 1729, 3000);
   height: 96px;
   padding: 15px 86px 15px 86px;
-  font-size: 24px;
+  font-size: calcResponsiveSize(25, 25, 1729, 3000);
   font-weight: $fw-medium;
-  line-height: 28.8px;
+  line-height: calcResponsiveSize(32.51, 32.51, 1729, 3000);
   color: $color-white;
   text-align: center;
   background-color: $color-green;
@@ -21,5 +21,23 @@
 
   &:active {
     background-color: $color-green-light;
+  }
+
+  @media (max-width: $breakpoint-xxl-min) {
+    width: calcResponsiveSize(388, 479, 769, 1728);
+    font-size: calcResponsiveSize(24, 25, 769, 1728);
+    line-height: calcResponsiveSize(28.8, 32.51, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    width: calcResponsiveSize(320, 388, 361, 768);
+    font-size: calcResponsiveSize(20, 24, 361, 768);
+    line-height: calcResponsiveSize(24, 28.8, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    width: 100%;
+    font-size: calcResponsiveSize(20, 20, 1, 360);
+    line-height: calcResponsiveSize(24, 24, 1, 360);
   }
 }
