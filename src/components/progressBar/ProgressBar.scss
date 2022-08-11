@@ -45,10 +45,11 @@
   z-index: 2;
   width: 12px;
   height: 12px;
-  background-color: black;
-  border: 1px solid white;
+  background-color: $color-black;
+  border: 1px solid $color-white;
   border-radius: 50%;
-  transition: all $transition;
+  box-shadow: 0px 5.25825px 5.25825px rgba(0, 0, 0, 0.25);
+  transition: all $transition linear;
 }
 
 .dot1 {
