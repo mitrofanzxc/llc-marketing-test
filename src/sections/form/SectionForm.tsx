@@ -6,8 +6,8 @@ import './SectionForm.scss';
 const SectionForm: FC = () => {
   return (
     <section className="section-form__bg">
-      <img src={example} alt="example" className="section-form__example" />
       <div className="wrapper">
+        <img src={example} alt="example" className="section-form__example" />
         <div className="section-form__description">
           <h2>
             <strong>Заказать консультацию</strong> у нашего инженера и узнать еще больше преимуществ

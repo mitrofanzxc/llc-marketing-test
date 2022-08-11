@@ -38,7 +38,7 @@ input[type='radio'] {
   text-align: center;
   background-color: $color-green;
   border-radius: 4px;
-  transition: all $transition-01 ease-in;
+  transition: all $transition-01 linear;
 
   @media (max-width: $breakpoint-xxl-min) {
     width: calcResponsiveSize(229, 331, 769, 1728);
@@ -59,9 +59,7 @@ input[type='radio']:checked + label {
 }
 
 .catalog-description {
-  font-size: 25px;
   font-weight: $fw-regular;
-  line-height: 35px;
   color: $color-black;
 }
 
@@ -80,7 +78,10 @@ input[type='radio']:checked + label {
   justify-content: space-between;
   flex-direction: column;
   width: calcResponsiveSize(403, 403, 1729, 3000);
-  padding: 35px 35px 44px 35px;
+  padding-top: calcResponsiveSize(35, 35, 1729, 3000);
+  padding-right: calcResponsiveSize(36, 36, 1729, 3000);
+  padding-bottom: calcResponsiveSize(44, 44, 1729, 3000);
+  padding-left: calcResponsiveSize(36, 36, 1729, 3000);
   text-align: center;
   background-color: $color-white;
   border-radius: 4px;
@@ -88,10 +89,18 @@ input[type='radio']:checked + label {
 
   @media (max-width: $breakpoint-xxl-min) {
     width: calcResponsiveSize(243, 403, 769, 1728);
+    padding-top: calcResponsiveSize(14, 35, 769, 1728);
+    padding-right: calcResponsiveSize(27, 36, 769, 1728);
+    padding-bottom: calcResponsiveSize(14, 44, 769, 1728);
+    padding-left: calcResponsiveSize(27, 36, 769, 1728);
   }
 
   @media (max-width: $breakpoint-md-min) {
     width: calcResponsiveSize(320, 243, 361, 768);
+    padding-top: calcResponsiveSize(14, 14, 1, 768);
+    padding-right: calcResponsiveSize(27, 27, 1, 768);
+    padding-bottom: calcResponsiveSize(14, 14, 1, 768);
+    padding-left: calcResponsiveSize(27, 27, 1, 768);
   }
 
   @media (max-width: $breakpoint-xxs-min) {

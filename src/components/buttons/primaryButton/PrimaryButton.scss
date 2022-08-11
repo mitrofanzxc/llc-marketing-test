@@ -5,7 +5,10 @@
   z-index: 2;
   width: calcResponsiveSize(479, 479, 1729, 3000);
   height: 96px;
-  padding: 15px 86px 15px 86px;
+  padding-top: calcResponsiveSize(15, 15, 1729, 3000);
+  padding-right: calcResponsiveSize(86, 86, 1729, 3000);
+  padding-bottom: calcResponsiveSize(15, 15, 1729, 3000);
+  padding-left: calcResponsiveSize(86, 86, 1729, 3000);
   font-size: calcResponsiveSize(25, 25, 1729, 3000);
   font-weight: $fw-medium;
   line-height: calcResponsiveSize(32.51, 32.51, 1729, 3000);
@@ -13,7 +16,7 @@
   text-align: center;
   background-color: $color-green;
   border-radius: 8px;
-  transition: all $transition-01 ease-in;
+  transition: all $transition-01 linear;
 
   &:hover {
     background-color: $color-green-medium;
@@ -25,6 +28,10 @@
 
   @media (max-width: $breakpoint-xxl-min) {
     width: calcResponsiveSize(388, 479, 769, 1728);
+    padding-top: calcResponsiveSize(15, 15, 1, 1728);
+    padding-right: calcResponsiveSize(20, 86, 769, 1728);
+    padding-bottom: calcResponsiveSize(15, 15, 1, 1728);
+    padding-left: calcResponsiveSize(20, 86, 769, 1728);
     font-size: calcResponsiveSize(24, 25, 769, 1728);
     line-height: calcResponsiveSize(28.8, 32.51, 769, 1728);
   }

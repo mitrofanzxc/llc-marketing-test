@@ -64,11 +64,11 @@ const SectionCatalog: FC = () => {
         </div>
         {catalogSection === 'Однокамерные' && (
           <div className="catalog" id="catalog">
-            <p className="catalog-description">
+            <h4 className="catalog-description">
               Изготовлены из бетонных колец, зарытых в одну яму. Они имеют небольшой объем,
               отстаивание сточных вод и разложение осадка в них происходит не так быстро. Поэтому
               такой вариант подойдет для дачных домов или жилых построек с малым числом проживающих.
-            </p>
+            </h4>
             <ul className="catalog-items">
               <li className="catalog-item single">
                 <img src={septic2} alt="septic2" className="" />
@@ -90,13 +90,13 @@ const SectionCatalog: FC = () => {
         )}
         {catalogSection === 'Двухкамерные' && (
           <div className="catalog" id="catalog">
-            <p className="catalog-description">
+            <h4 className="catalog-description">
               Имеют несколько камер, в которых стоки разбавляются, отстаиваются, а получившийся
               органический осадок разлагается. Благодаря такой переработке, откачивать воду из
               септика приходится не чаще, чем раз в 2-3 года, что очень удобно и выгодно. Такой
               вариант полностью отвечает санитарным регламентам, подходит для больших домов или
               маленьких коттеджей.
-            </p>
+            </h4>
             <ul className="catalog-items">
               <li className="catalog-item double">
                 <img src={septic2x} alt="septic2x" className="" />
@@ -123,10 +123,10 @@ const SectionCatalog: FC = () => {
         )}
         {catalogSection === 'Трехкамерные' && (
           <div className="catalog" id="catalog">
-            <p className="catalog-description">
+            <h4 className="catalog-description">
               Очень надежные, имеют максимальную производительность, поэтому отлично справляются с
               большим количеством сточных вод.
-            </p>
+            </h4>
             <ul className="catalog-items">
               <li className="catalog-item double">
                 <img src={septic3x} alt="septic3x" className="" />

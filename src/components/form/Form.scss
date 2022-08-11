@@ -120,7 +120,7 @@
   text-align: center;
   background-color: $color-orange;
   border-radius: 8px;
-  transition: all $transition-01 ease-in;
+  transition: all $transition-01 linear;
 
   &:hover {
     background-color: $color-orange-medium;

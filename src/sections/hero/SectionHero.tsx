@@ -20,16 +20,18 @@ const SectionHero: FC = () => {
           <br />
           из бетонных колец в Минске и области
         </h1>
-        <div className="benefits-header__wrapper">
-          <BenefitsHeader src={engineer} logo="engineer" description="Выезд инженера бесплатно" />
-          <BenefitsHeader
-            src={mounting}
-            logo="mounting"
-            description="Все монтажные работы за 1 день"
-          />
-          <BenefitsHeader src={payment} logo="payment" description="Оплата по факту" />
+        <div className="benefits-header__wrapper-main">
+          <div className="benefits-header__wrapper">
+            <BenefitsHeader src={engineer} logo="engineer" description="Выезд инженера бесплатно" />
+            <BenefitsHeader
+              src={mounting}
+              logo="mounting"
+              description="Все монтажные работы за 1 день"
+            />
+            <BenefitsHeader src={payment} logo="payment" description="Оплата по факту" />
+          </div>
+          <PrimaryButton description="Заказать консультацию инженера" />
         </div>
-        <PrimaryButton description="Заказать консультацию инженера" />
         <img src={sewerage} alt="sewerage" className="sewerage" />
       </div>
     </section>

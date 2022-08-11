@@ -6,11 +6,7 @@ export interface IPrimaryButton {
 }
 
 const PrimaryButton: FC<IPrimaryButton> = ({ description }) => {
-  return (
-    <>
-      <button className="primary-button">{description}</button>
-    </>
-  );
+  return <button className="primary-button">{description}</button>;
 };
 
 export { PrimaryButton };

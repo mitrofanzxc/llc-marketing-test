@@ -22,9 +22,14 @@
 }
 
 .logo {
-  font-size: calcResponsiveSize(20, 35, 769, 1728);
+  font-size: calcResponsiveSize(35, 35, 1729, 3000);
   font-weight: $fw-bold;
-  line-height: calcResponsiveSize(24, 41.48, 769, 1728);
+  line-height: calcResponsiveSize(41.48, 41.48, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    font-size: calcResponsiveSize(20, 35, 769, 1728);
+    line-height: calcResponsiveSize(24, 41.48, 769, 1728);
+  }
 
   @media (max-width: $breakpoint-md-min) {
     font-size: calcResponsiveSize(20, 20, 1, 768);
