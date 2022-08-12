@@ -30,6 +30,10 @@
     width: 93%;
   }
 
+  @media (max-width: $breakpoint-sm-min) {
+    width: 88%;
+  }
+
   .primary-button {
     width: 100%;
     background-color: $color-orange;
@@ -80,6 +84,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  @media (max-width: $breakpoint-sm-min) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 
 .checkbox-wrapper input {
@@ -110,7 +119,7 @@
 .submit {
   width: 100%;
   padding: 20px 0;
-  font-size: 27px;
+  font-size: calcResponsiveSize(27, 27, 1729, 3000);
   font-weight: $fw-medium;
   line-height: 32px;
   color: $color-white;
@@ -125,5 +134,17 @@
 
   &:active {
     background-color: $color-orange-light;
+  }
+
+  @media (max-width: $breakpoint-xxl-min) {
+    font-size: calcResponsiveSize(24, 27, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    font-size: calcResponsiveSize(20, 24, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    font-size: calcResponsiveSize(20, 20, 1, 360);
   }
 }

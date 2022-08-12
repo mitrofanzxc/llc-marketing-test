@@ -2,6 +2,7 @@ import { FC, useEffect, useState, MouseEvent, FocusEvent, ChangeEvent } from 're
 import './Form.scss';
 
 const Form: FC = () => {
+  const [isName, setIsName] = useState<string>('');
   const [isPhone, setIsPhone] = useState<string>('');
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [isPhoneBlur, setIsPhoneBlur] = useState<boolean>(false);
@@ -25,6 +26,12 @@ const Form: FC = () => {
     const target = event.target as HTMLInputElement;
     const value = target.value as string;
     setIsPhone(value);
+  };
+
+  const nameHandler = (event: ChangeEvent<HTMLInputElement>) => {
+    const target = event.target as HTMLInputElement;
+    const value = target.value as string;
+    setIsName(value);
   };
 
   const checkboxHandler = () => {
@@ -60,6 +67,7 @@ const Form: FC = () => {
   const handleSubmit = (event: MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
     sendFormData();
+    setIsName('');
     setIsPhone('');
     setIsChecked(false);
   };
@@ -74,7 +82,15 @@ const Form: FC = () => {
 
   return (
     <form method="post" className="form">
-      <input type="text" name="name" id="name" placeholder="Имя" className="input" />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Имя"
+        className="input"
+        onChange={(event) => nameHandler(event)}
+        value={isName}
+      />
       <p className="error-field"></p>
       <input
         className="input"

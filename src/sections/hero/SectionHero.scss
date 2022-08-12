@@ -51,6 +51,7 @@
   }
 
   @media (max-width: $breakpoint-md-min) {
+    top: 28%;
     right: calcResponsiveSize(0, 0, 1, 768);
     width: calcResponsiveSize(261, 261, 1, 768);
     height: calcResponsiveSize(269, 269, 1, 768);
@@ -71,6 +72,7 @@
   }
 
   @media (max-width: $breakpoint-md-min) {
+    top: 300px;
     row-gap: calcResponsiveSize(20, 30, 361, 768);
   }
 
