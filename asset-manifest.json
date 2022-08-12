@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/llc-marketing-test/static/css/main.0d3e543e.css",
-    "main.js": "/llc-marketing-test/static/js/main.5898f341.js",
+    "main.css": "/llc-marketing-test/static/css/main.9d2d60dd.css",
+    "main.js": "/llc-marketing-test/static/js/main.3e3db8f1.js",
     "static/media/example.png": "/llc-marketing-test/static/media/example.8d7abde6a4752286fc6e.png",
     "static/media/banner-bg.jpg": "/llc-marketing-test/static/media/banner-bg.6f317711f1e59548b391.jpg",
     "static/media/sewerage.png": "/llc-marketing-test/static/media/sewerage.14b64cbed455aa07acc6.png",
@@ -42,22 +42,22 @@
     "static/media/benefits-bg.png": "/llc-marketing-test/static/media/benefits-bg.b59baf826815200cefb0.png",
     "static/media/payment.png": "/llc-marketing-test/static/media/payment.a3cc6a9cdf26bb2047ba.png",
     "static/media/mounting.png": "/llc-marketing-test/static/media/mounting.b789cbf71c5a2c1ae701.png",
-    "static/media/viber.svg": "/llc-marketing-test/static/media/viber.f6b5e7abada2fb30d445.svg",
-    "static/media/arrow-down-left.svg": "/llc-marketing-test/static/media/arrow-down-left.e92e69404ebdc972e8b0.svg",
-    "static/media/whatsapp.svg": "/llc-marketing-test/static/media/whatsapp.2ed5ffb90081ef248407.svg",
-    "static/media/arrow-right.svg": "/llc-marketing-test/static/media/arrow-right.5cc99cde24abb06c22a2.svg",
-    "static/media/telegram.svg": "/llc-marketing-test/static/media/telegram.3bd481e751fe76d031a2.svg",
-    "static/media/location.svg": "/llc-marketing-test/static/media/location.7db5ccdebcc7a57447c7cf5725960a0f.svg",
+    "static/media/viber.svg": "/llc-marketing-test/static/media/viber.6bcc8fe6d385d8a9654f.svg",
+    "static/media/arrow-down-left.svg": "/llc-marketing-test/static/media/arrow-down-left.3d4db786f98f17d87855.svg",
+    "static/media/whatsapp.svg": "/llc-marketing-test/static/media/whatsapp.1663865e05bbca5e89fc.svg",
+    "static/media/arrow-right.svg": "/llc-marketing-test/static/media/arrow-right.564d156253d03e1e3db9.svg",
+    "static/media/telegram.svg": "/llc-marketing-test/static/media/telegram.ec53b462898ecacaf591.svg",
+    "static/media/location.svg": "/llc-marketing-test/static/media/location.9c55294749d407cbe75f9f941bef8975.svg",
     "index.html": "/llc-marketing-test/index.html",
-    "static/media/checked.svg": "/llc-marketing-test/static/media/checked.1b14298f8109d2458466.svg",
-    "static/media/unchecked.svg": "/llc-marketing-test/static/media/unchecked.b2f6db110d9f582c1d2b.svg",
-    "static/media/round-left.svg": "/llc-marketing-test/static/media/round-left.35f271c6b637822d3e85.svg",
-    "static/media/round-right.svg": "/llc-marketing-test/static/media/round-right.459a33ebba0cfb7b3424.svg",
-    "main.0d3e543e.css.map": "/llc-marketing-test/static/css/main.0d3e543e.css.map",
-    "main.5898f341.js.map": "/llc-marketing-test/static/js/main.5898f341.js.map"
+    "static/media/checked.svg": "/llc-marketing-test/static/media/checked.296e4e54a565b5d95093.svg",
+    "static/media/unchecked.svg": "/llc-marketing-test/static/media/unchecked.ea57560a592c34af37f0.svg",
+    "static/media/round-left.svg": "/llc-marketing-test/static/media/round-left.feac2bdd6c1ac4391cab.svg",
+    "static/media/round-right.svg": "/llc-marketing-test/static/media/round-right.0ab8058f64b9159f7696.svg",
+    "main.9d2d60dd.css.map": "/llc-marketing-test/static/css/main.9d2d60dd.css.map",
+    "main.3e3db8f1.js.map": "/llc-marketing-test/static/js/main.3e3db8f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d3e543e.css",
-    "static/js/main.5898f341.js"
+    "static/css/main.9d2d60dd.css",
+    "static/js/main.3e3db8f1.js"
   ]
 }
