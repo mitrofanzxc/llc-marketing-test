@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/llc-marketing-test/static/css/main.f076f15a.css",
-    "main.js": "/llc-marketing-test/static/js/main.950887e3.js",
+    "main.css": "/llc-marketing-test/static/css/main.37eb17e2.css",
+    "main.js": "/llc-marketing-test/static/js/main.1c2becd9.js",
     "static/media/example.png": "/llc-marketing-test/static/media/example.8d7abde6a4752286fc6e.png",
     "static/media/sewerage.png": "/llc-marketing-test/static/media/sewerage.baddd9da041f65e2c7d0.png",
     "static/media/banner-bg.jpg": "/llc-marketing-test/static/media/banner-bg.daaee9123cf7172ca637.jpg",
@@ -52,11 +52,11 @@
     "static/media/unchecked.svg": "/llc-marketing-test/static/media/unchecked.ea57560a592c34af37f0.svg",
     "static/media/round-left.svg": "/llc-marketing-test/static/media/round-left.feac2bdd6c1ac4391cab.svg",
     "static/media/round-right.svg": "/llc-marketing-test/static/media/round-right.0ab8058f64b9159f7696.svg",
-    "main.f076f15a.css.map": "/llc-marketing-test/static/css/main.f076f15a.css.map",
-    "main.950887e3.js.map": "/llc-marketing-test/static/js/main.950887e3.js.map"
+    "main.37eb17e2.css.map": "/llc-marketing-test/static/css/main.37eb17e2.css.map",
+    "main.1c2becd9.js.map": "/llc-marketing-test/static/js/main.1c2becd9.js.map"
   },
   "entrypoints": [
-    "static/css/main.f076f15a.css",
-    "static/js/main.950887e3.js"
+    "static/css/main.37eb17e2.css",
+    "static/js/main.1c2becd9.js"
   ]
 }
