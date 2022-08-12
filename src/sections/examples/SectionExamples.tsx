@@ -31,17 +31,17 @@ const SectionExamples: FC = () => {
             spaceBetween={40}
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             breakpoints={{
-              769: {
-                slidesPerView: 4,
-              },
-              768: {
-                slidesPerView: 2,
+              1: {
+                slidesPerView: 1,
               },
               361: {
                 slidesPerView: 2,
               },
-              360: {
-                slidesPerView: 1,
+              769: {
+                slidesPerView: 3,
+              },
+              1200: {
+                slidesPerView: 4,
               },
             }}
             className="mySwiper"

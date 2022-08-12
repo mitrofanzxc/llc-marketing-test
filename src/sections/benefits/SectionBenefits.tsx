@@ -12,32 +12,80 @@ import quality from '../../images/icons/quality.png';
 import bestPrice from '../../images/icons/best-price.png';
 import './SectionBenefits.scss';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 const SectionBenefits: FC = () => {
   return (
     <section className="benefits">
       <section className="progress-bars wrapper">
-        <ProgressBar
-          header="6 лет"
-          description="Устанавливаем канализацию"
-          fw="fw_regular"
-          id={1}
-          progress={28}
-        />
-        <ProgressBar
-          header="1300+"
-          description="Объектов реализовано за все время"
-          fw="fw_regular"
-          id={2}
-          progress={46}
-        />
-        <ProgressBar
-          header="1 год"
-          description="Гарантии на канализацию"
-          fw="fw_regular"
-          id={3}
-          progress={67}
-        />
-        <ProgressBar header="0 BYN" description="Предоплата" fw="fw_medium" id={4} progress={89} />
+        <Swiper
+          cssMode={true}
+          navigation={true}
+          pagination={{
+            clickable: true,
+          }}
+          mousewheel={true}
+          keyboard={true}
+          slidesPerView={4}
+          spaceBetween={100}
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          breakpoints={{
+            1: {
+              slidesPerView: 1,
+            },
+            481: {
+              slidesPerView: 2,
+            },
+            769: {
+              slidesPerView: 3,
+            },
+            1200: {
+              slidesPerView: 4,
+            },
+          }}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <ProgressBar
+              header="6 лет"
+              description="Устанавливаем канализацию"
+              fw="fw_regular"
+              id={1}
+              progress={28}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProgressBar
+              header="1300+"
+              description="Объектов реализовано за все время"
+              fw="fw_regular"
+              id={2}
+              progress={46}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProgressBar
+              header="1 год"
+              description="Гарантии на канализацию"
+              fw="fw_regular"
+              id={3}
+              progress={67}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProgressBar
+              header="0 BYN"
+              description="Предоплата"
+              fw="fw_medium"
+              id={4}
+              progress={89}
+            />
+          </SwiperSlide>
+        </Swiper>
       </section>
       <section className="septics wrapper">
         <h2 className="text-align_center">

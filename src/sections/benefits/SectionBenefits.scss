@@ -1,5 +1,23 @@
 @import '../../sass/Constants.scss';
 
+.benefits {
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+}
+
 .progress-bars {
   display: flex;
   align-items: center;
@@ -18,10 +36,6 @@
 
   @media (max-width: $breakpoint-sm-max) {
     padding-top: 420px;
-  }
-
-  @media (max-width: $breakpoint-xxs-min) {
-    padding-top: calcResponsiveSize(386, 386, 1, 360);
   }
 }
 
