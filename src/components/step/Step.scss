@@ -123,6 +123,11 @@
   background-image: url('../../images/icons/arrow-right.svg');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media (max-width: $breakpoint-md-min) {
+    left: 40%;
+    height: 7px;
+  }
 }
 
 .step-02 {
@@ -134,6 +139,10 @@
   background-image: url('../../images/icons/arrow-right.svg');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media (max-width: $breakpoint-md-min) {
+    display: none;
+  }
 }
 
 .step-03 {
@@ -145,6 +154,28 @@
   background-image: url('../../images/icons/arrow-right.svg');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media (max-width: $breakpoint-xl-min) {
+    display: none;
+  }
+}
+
+.step-04 {
+  display: none;
+  position: absolute;
+  top: 67px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background-image: url('../../images/icons/arrow-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(-1);
+
+  @media (max-width: $breakpoint-md-min) {
+    display: block;
+    height: 7px;
+  }
 }
 
 .step-06 {
@@ -157,6 +188,14 @@
   background-size: contain;
   background-repeat: no-repeat;
   transform: scale(-1);
+
+  @media (max-width: $breakpoint-xl-min) {
+    left: 100%;
+  }
+
+  @media (max-width: $breakpoint-xl-min) {
+    display: none;
+  }
 }
 
 .step-05 {
@@ -168,6 +207,21 @@
   background-image: url('../../images/icons/arrow-down-left.svg');
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media (max-width: $breakpoint-xl-min) {
+    top: 40px;
+    height: 12px;
+    background-image: url('../../images/icons/arrow-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(-1);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    left: 40%;
+    height: 7px;
+    transform: scale(1);
+  }
 }
 
 .step-icon {
