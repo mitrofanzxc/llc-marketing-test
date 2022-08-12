@@ -44,6 +44,10 @@
     margin-top: calcResponsiveSize(20, 30, 361, 769);
   }
 
+  @media (max-width: $breakpoint-sm-max) {
+    column-gap: 1%;
+  }
+
   @media (max-width: $breakpoint-xxs-min) {
     row-gap: calcResponsiveSize(20, 20, 1, 360);
     margin-top: calcResponsiveSize(20, 20, 1, 360);
