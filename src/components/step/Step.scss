@@ -1,0 +1,249 @@
+@import '../../sass/Constants.scss';
+
+.step-wrapper {
+  width: 16%;
+
+  @media (max-width: $breakpoint-xl-min) {
+    width: 24%;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 49%;
+  }
+}
+
+.step-wrapper_01 {
+  order: 1;
+}
+
+.step-wrapper_02 {
+  order: 2;
+}
+
+.step-wrapper_03 {
+  order: 3;
+
+  @media (max-width: $breakpoint-sm-max) {
+    order: 4;
+  }
+}
+
+.step-wrapper_04 {
+  order: 4;
+
+  @media (max-width: $breakpoint-xl-min) {
+    order: 6;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    order: 3;
+  }
+}
+
+.step-wrapper_05 {
+  width: 31%;
+  order: 6;
+
+  @media (max-width: $breakpoint-xl-min) {
+    width: 20%;
+    order: 5;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 49%;
+    order: 5;
+  }
+}
+
+.step-wrapper_06 {
+  display: flex;
+  justify-content: flex-end;
+  width: 57%;
+  order: 5;
+
+  @media (max-width: $breakpoint-xl-min) {
+    justify-content: flex-start;
+    width: 20%;
+    order: 4;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    display: block;
+    width: 49%;
+    order: 6;
+  }
+}
+
+.step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 220px;
+
+  @media (max-width: $breakpoint-xl-min) {
+    width: 180px;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 100%;
+  }
+}
+
+.step_03 {
+  width: 260px;
+
+  @media (max-width: $breakpoint-xl-min) {
+    width: 180px;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 100%;
+  }
+}
+
+.step_06 {
+  width: 324px;
+
+  @media (max-width: $breakpoint-xl-min) {
+    width: 180px;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 100%;
+  }
+}
+
+.step-01 {
+  position: absolute;
+  top: 67px;
+  left: 80%;
+  width: 100%;
+  height: 12px;
+  background-image: url('../../images/icons/arrow-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (max-width: $breakpoint-md-min) {
+    left: 40%;
+    height: 7px;
+  }
+}
+
+.step-02 {
+  position: absolute;
+  top: 67px;
+  left: 80%;
+  width: 100%;
+  height: 12px;
+  background-image: url('../../images/icons/arrow-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (max-width: $breakpoint-md-min) {
+    display: none;
+  }
+}
+
+.step-03 {
+  position: absolute;
+  top: 67px;
+  left: 80%;
+  width: 100%;
+  height: 12px;
+  background-image: url('../../images/icons/arrow-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (max-width: $breakpoint-xl-min) {
+    display: none;
+  }
+}
+
+.step-04 {
+  display: none;
+  position: absolute;
+  top: 67px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background-image: url('../../images/icons/arrow-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(-1);
+
+  @media (max-width: $breakpoint-md-min) {
+    display: block;
+    height: 7px;
+  }
+}
+
+.step-06 {
+  position: absolute;
+  top: 40px;
+  left: 24%;
+  width: 100%;
+  height: 12px;
+  background-image: url('../../images/icons/arrow-right.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(-1);
+
+  @media (max-width: $breakpoint-xl-min) {
+    left: 100%;
+  }
+
+  @media (max-width: $breakpoint-xl-min) {
+    display: none;
+  }
+}
+
+.step-05 {
+  position: absolute;
+  top: -82px;
+  left: 50%;
+  width: 100%;
+  height: 142px;
+  background-image: url('../../images/icons/arrow-down-left.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (max-width: $breakpoint-xl-min) {
+    top: 40px;
+    height: 12px;
+    background-image: url('../../images/icons/arrow-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scale(-1);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    left: 40%;
+    height: 7px;
+    transform: scale(1);
+  }
+}
+
+.step-icon {
+  width: 84px;
+  height: 99px;
+  margin-top: 5px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid $color-black;
+}
+
+.step-number {
+  font-size: 17.85px;
+  font-weight: $fw-medium;
+  line-height: 21.15px;
+  color: $color-black;
+}
+
+.step-header {
+  margin-top: 25px;
+}
+
+.step-description {
+  margin-top: 10px;
+  font-weight: $fw-regular;
+}

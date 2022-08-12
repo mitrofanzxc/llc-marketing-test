@@ -1,0 +1,55 @@
+@import '../../sass/Constants.scss';
+
+.stages {
+  margin-top: calcResponsiveSize(164, 164, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(70, 164, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(40, 70, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(40, 40, 1, 360);
+  }
+
+  h2 {
+    width: 56%;
+    margin: 0 auto;
+  }
+}
+
+.steps-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 12%;
+  row-gap: calcResponsiveSize(90, 90, 1729, 3000);
+  margin-top: calcResponsiveSize(82, 82, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    row-gap: calcResponsiveSize(40, 90, 769, 1728);
+    margin-top: calcResponsiveSize(30, 82, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-xl-min) {
+    column-gap: 14%;
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    row-gap: calcResponsiveSize(20, 40, 361, 769);
+    margin-top: calcResponsiveSize(20, 30, 361, 769);
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    column-gap: 1%;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    row-gap: calcResponsiveSize(20, 20, 1, 360);
+    margin-top: calcResponsiveSize(20, 20, 1, 360);
+  }
+}

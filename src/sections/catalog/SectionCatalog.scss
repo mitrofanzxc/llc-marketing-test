@@ -1,0 +1,189 @@
+@import '../../sass/Constants.scss';
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 auto;
+  padding-top: calcResponsiveSize(634, 634, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-top: calcResponsiveSize(396, 634, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-top: calcResponsiveSize(183, 396, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    padding-top: calcResponsiveSize(183, 396, 361, 768);
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+  }
+
+  @media (max-width: $breakpoint-sm-min) {
+    padding-top: 294px;
+  }
+
+  // @media (max-width: $breakpoint-xxs-min) {
+  //   padding-top: calcResponsiveSize(183, 183, 1, 360);
+  // }
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.catalog-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calcResponsiveSize(331, 331, 1729, 3000);
+  height: 68px;
+  font-size: 24px;
+  font-weight: $fw-medium;
+  line-height: 28.8px;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-green;
+  border-radius: 4px;
+  transition: all $transition-01 linear;
+
+  @media (max-width: $breakpoint-xxl-min) {
+    width: calcResponsiveSize(229, 331, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 100%;
+  }
+}
+
+input[type='radio']:checked + label {
+  background-color: $color-orange-medium;
+}
+
+.catalog {
+  margin-top: calcResponsiveSize(63, 63, 1729, 3000);
+  padding-bottom: calcResponsiveSize(168, 168, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(30, 63, 769, 1728);
+    padding-bottom: calcResponsiveSize(70, 168, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(20, 30, 361, 768);
+    padding-bottom: calcResponsiveSize(40, 70, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(20, 20, 1, 360);
+    padding-bottom: calcResponsiveSize(40, 40, 1, 360);
+  }
+}
+
+.catalog-description {
+  font-weight: $fw-regular;
+  color: $color-black;
+}
+
+.catalog-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 9.5%;
+  row-gap: 38px;
+  margin-top: calcResponsiveSize(47, 47, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(30, 47, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-lg-min) {
+    column-gap: 3.5%;
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(20, 30, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    column-gap: 1%;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(20, 20, 1, 360);
+  }
+}
+
+.catalog-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: calcResponsiveSize(38, 38, 1729, 3000);
+  width: 27%;
+  padding-top: calcResponsiveSize(35, 35, 1729, 3000);
+  padding-right: calcResponsiveSize(36, 36, 1729, 3000);
+  padding-bottom: calcResponsiveSize(44, 44, 1729, 3000);
+  padding-left: calcResponsiveSize(36, 36, 1729, 3000);
+  text-align: center;
+  background-color: $color-white;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    row-gap: calcResponsiveSize(20, 38, 769, 1728);
+    padding-top: calcResponsiveSize(14, 35, 769, 1728);
+    padding-right: calcResponsiveSize(27, 36, 769, 1728);
+    padding-bottom: calcResponsiveSize(14, 44, 769, 1728);
+    padding-left: calcResponsiveSize(27, 36, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-lg-min) {
+    width: 31%;
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    row-gap: calcResponsiveSize(20, 20, 1, 768);
+    padding-top: calcResponsiveSize(14, 14, 1, 768);
+    padding-right: calcResponsiveSize(27, 27, 1, 768);
+    padding-bottom: calcResponsiveSize(14, 14, 1, 768);
+    padding-left: calcResponsiveSize(27, 27, 1, 768);
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 49%;
+  }
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    margin-top: 8px;
+  }
+
+  .catalog-button {
+    width: 100%;
+  }
+}
+
+.order-button {
+  &:hover {
+    background-color: $color-green-medium;
+  }
+
+  &:active {
+    background-color: $color-green-light;
+  }
+}

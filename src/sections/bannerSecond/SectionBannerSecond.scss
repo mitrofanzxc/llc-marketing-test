@@ -1,0 +1,79 @@
+@import '../../sass/Constants.scss';
+
+.section-banner_second {
+  margin-top: calcResponsiveSize(164, 164, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(70, 164, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(40, 70, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(40, 40, 1, 360);
+  }
+}
+
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: calcResponsiveSize(85, 85, 1729, 3000);
+  padding-bottom: calcResponsiveSize(85, 85, 1729, 3000);
+  padding-left: calcResponsiveSize(24, 24, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-top: calcResponsiveSize(40, 85, 769, 1728);
+    padding-bottom: calcResponsiveSize(40, 85, 769, 1728);
+    padding-left: calcResponsiveSize(0, 24, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-lg-min) {
+    justify-content: center;
+    flex-direction: column;
+    row-gap: calcResponsiveSize(10, 20, 361, 992);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-top: calcResponsiveSize(20, 40, 361, 768);
+    padding-bottom: calcResponsiveSize(20, 40, 361, 768);
+    padding-left: calcResponsiveSize(0, 0, 1, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    padding-top: calcResponsiveSize(20, 20, 1, 360);
+    padding-bottom: calcResponsiveSize(20, 20, 1, 360);
+    row-gap: calcResponsiveSize(10, 10, 1, 360);
+  }
+
+  .submit {
+    width: 37%;
+    font-size: calcResponsiveSize(25, 25, 1729, 3000);
+    line-height: calcResponsiveSize(29.63, 29.63, 1729, 3000);
+
+    @media (max-width: $breakpoint-xxl-min) {
+      font-size: calcResponsiveSize(24, 25, 769, 1728);
+      line-height: calcResponsiveSize(28.8, 29.63, 769, 1728);
+    }
+
+    @media (max-width: $breakpoint-lg-min) {
+      width: 59%;
+    }
+
+    @media (max-width: $breakpoint-md-min) {
+      font-size: calcResponsiveSize(20, 24, 361, 768);
+      line-height: calcResponsiveSize(24, 28.8, 361, 768);
+    }
+
+    @media (max-width: $breakpoint-sm-max) {
+      width: 80%;
+    }
+
+    @media (max-width: $breakpoint-xxs-min) {
+      font-size: calcResponsiveSize(20, 20, 1, 360);
+      line-height: calcResponsiveSize(24, 24, 1, 360);
+    }
+  }
+}

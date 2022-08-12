@@ -1,0 +1,136 @@
+@import '../../sass/Constants.scss';
+
+.circle {
+  position: relative;
+  min-width: calcResponsiveSize(264, 264, 1729, 3000);
+  width: calcResponsiveSize(264, 264, 1729, 3000);
+  height: calcResponsiveSize(264, 264, 1729, 3000);
+  padding: 0 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    background-color: $color-white;
+    background-image: url('../../images/benefits-bg.png');
+    border-radius: 50%;
+  }
+
+  @media (max-width: $breakpoint-xxl-min) {
+    min-width: calcResponsiveSize(230, 264, 769, 1728);
+    width: calcResponsiveSize(230, 264, 769, 1728);
+    height: calcResponsiveSize(230, 264, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    min-width: calcResponsiveSize(230, 230, 1, 768);
+    width: calcResponsiveSize(230, 230, 1, 768);
+    height: calcResponsiveSize(230, 230, 1, 768);
+  }
+
+  h2 {
+    position: relative;
+  }
+}
+
+.dot {
+  position: absolute;
+  z-index: 2;
+  width: 12px;
+  height: 12px;
+  background-color: $color-black;
+  border: 1px solid $color-white;
+  border-radius: 50%;
+  box-shadow: 0px 5.25825px 5.25825px rgba(0, 0, 0, 0.25);
+  transition: all $transition linear;
+}
+
+.dot1 {
+  transform: translate(
+    calcResponsiveSize(126, 126, 1729, 3000),
+    calcResponsiveSize(28, 28, 1729, 3000)
+  );
+
+  @media (max-width: $breakpoint-xxl-min) {
+    transform: translate(
+      calcResponsiveSize(108, 126, 769, 1728),
+      calcResponsiveSize(24, 28, 769, 1728)
+    );
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    transform: translate(calcResponsiveSize(108, 108, 1, 768), calcResponsiveSize(24, 24, 1, 768));
+  }
+}
+
+.dot2 {
+  transform: translate(
+    calcResponsiveSize(28, 28, 1729, 3000),
+    calcResponsiveSize(126, 126, 1729, 3000)
+  );
+
+  @media (max-width: $breakpoint-xxl-min) {
+    transform: translate(
+      calcResponsiveSize(24, 28, 769, 1728),
+      calcResponsiveSize(108, 126, 769, 1728)
+    );
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    transform: translate(calcResponsiveSize(24, 24, 1, 768), calcResponsiveSize(108, 108, 1, 768));
+  }
+}
+
+.dot3 {
+  transform: translate(
+    calcResponsiveSize(-113, -113, 1729, 3000),
+    calcResponsiveSize(60, 60, 1729, 3000)
+  );
+
+  @media (max-width: $breakpoint-xxl-min) {
+    transform: translate(
+      calcResponsiveSize(-98, -113, 769, 1728),
+      calcResponsiveSize(54, 60, 769, 1728)
+    );
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    transform: translate(calcResponsiveSize(-98, -98, 1, 768), calcResponsiveSize(54, 54, 1, 768));
+  }
+}
+
+.dot4 {
+  transform: translate(
+    calcResponsiveSize(-80, -80, 1729, 3000),
+    calcResponsiveSize(-100, -100, 1729, 3000)
+  );
+
+  @media (max-width: $breakpoint-xxl-min) {
+    transform: translate(
+      calcResponsiveSize(-70, -80, 769, 1728),
+      calcResponsiveSize(-88, -100, 769, 1728)
+    );
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    transform: translate(
+      calcResponsiveSize(-70, -70, 1, 768),
+      calcResponsiveSize(-88, -88, 1, 768)
+    );
+  }
+}
+
+.progress-bar__description {
+  position: relative;
+  font-size: 20px;
+  font-weight: $fw-regular;
+  line-height: 23.7px;
+  margin-top: 11px;
+}

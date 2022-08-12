@@ -1,0 +1,107 @@
+@use 'sass:math';
+
+// === MIXINS ===
+
+@mixin roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+// === / MIXINS ===
+
+// === FONTS ===
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url('../fonts/#{$file_name}.woff') format('woff'),
+      url('../fonts/#{$file_name}.woff2') format('woff2');
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import './Fonts.scss';
+
+// === / FONTS ===
+
+// === FUNCTIONS ===
+
+@function strip-unit($num) {
+  @return math.div($num, ($num * 0 + 1));
+}
+
+@function rem($num) {
+  @return math.div(strip-unit($num), 16) * 1rem;
+}
+
+@function calcResponsiveSize($size-min, $size-max, $width-min, $width-max) {
+  $size-min: strip-unit($size-min);
+  $size-max: strip-unit($size-max);
+  $width-min: strip-unit($width-min);
+  $width-max: strip-unit($width-max);
+  $k: math.div(($size-max - $size-min), ($width-max - $width-min));
+  $b: rem($size-min - $k * $width-min);
+  @return calc(#{$k} * 100vw + #{$b});
+}
+
+// === / FUNCTIONS ===
+
+// === VARIABLES ===
+
+$base: rem(4px);
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+$fs-xxxs: rem(15px);
+$fs-xxs: rem(20px);
+$fs-xs: rem(22px);
+$fs-s: rem(24px);
+$fs-m: rem(25px);
+$fs-l: rem(27px);
+$fs-xl: rem(32px);
+$fs-xxl: rem(35px);
+$fs-xxxl: rem(36px);
+$fs-xxxxl: rem(40px);
+$fs-xxxxxl: rem(55px);
+
+$transition: 0.3s;
+$transition-01: 0.1s;
+$transition-02: 0.2s;
+
+$color-black: rgba(0, 0, 0, 1);
+$color-black-06: rgba(0, 0, 0, 0.6);
+$color-white: rgba(255, 255, 255, 1);
+$color-white-06: rgba(255, 255, 255, 0.6);
+$color-green: rgba(65, 93, 15, 1);
+$color-green-medium: rgba(96, 136, 25, 1);
+$color-green-light: rgba(128, 160, 71, 1);
+$color-orange: rgba(226, 129, 3, 1);
+$color-orange-medium: rgba(246, 150, 24, 1);
+$color-orange-light: rgba(248, 171, 70, 1);
+$color-yellow: rgba(254, 208, 82, 1);
+$color-grey: rgba(235, 235, 235, 1);
+$color-grey-light: rgba(246, 246, 246, 1);
+$color-blue: rgba(26, 46, 73, 1);
+$color-blue-06: rgba(26, 46, 73, 0.6);
+
+$breakpoint-xxs-min: 360px;
+$breakpoint-xs-min: 480px;
+$breakpoint-sm-min: 576px;
+$breakpoint-md-min: 768px;
+$breakpoint-lg-min: 992px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-xxl-min: 1728px;
+
+$breakpoint-xxxs-max: $breakpoint-xxs-min - 1px;
+$breakpoint-xxs-max: $breakpoint-xs-min - 1px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+
+// === / VARIABLES ===

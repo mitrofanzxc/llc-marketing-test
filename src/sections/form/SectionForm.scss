@@ -1,0 +1,71 @@
+@import '../../sass/Constants.scss';
+
+.section-form__bg {
+  position: relative;
+  background-color: $color-white;
+
+  .wrapper {
+    position: relative;
+  }
+
+  h2 {
+    width: 780px;
+
+    @media (max-width: $breakpoint-md-min) {
+      width: 100%;
+    }
+  }
+
+  h4 {
+    width: 547px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-black-06;
+
+    @media (max-width: $breakpoint-md-min) {
+      width: 100%;
+    }
+  }
+}
+
+.section-form__example {
+  position: absolute;
+  top: calcResponsiveSize(0, 0, 1729, 3000);
+  right: 0;
+  width: calcResponsiveSize(997, 997, 1729, 3000);
+  height: calcResponsiveSize(915, 915, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    top: calcResponsiveSize(184, 0, 769, 1728);
+    width: calcResponsiveSize(503, 997, 769, 1728);
+    height: calcResponsiveSize(475, 915, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    display: none;
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    top: calcResponsiveSize(184, 184, 361, 768);
+    width: calcResponsiveSize(503, 503, 361, 768);
+    height: calcResponsiveSize(475, 475, 361, 768);
+  }
+}
+
+.section-form__description {
+  padding-top: calcResponsiveSize(114, 114, 1729, 3000);
+  padding-bottom: 140px;
+
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-top: calcResponsiveSize(50, 114, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-top: calcResponsiveSize(20, 50, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    padding-top: calcResponsiveSize(20, 20, 1, 360);
+  }
+}

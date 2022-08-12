@@ -1,0 +1,76 @@
+@import '../../sass/Constants.scss';
+
+.benefits {
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+.progress-bars {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding-top: calcResponsiveSize(122, 122, 1729, 3000);
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-top: calcResponsiveSize(241, 122, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-top: calcResponsiveSize(386, 241, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    padding-top: 420px;
+  }
+}
+
+.septics {
+  padding-top: calcResponsiveSize(120, 120, 1729, 3000);
+  padding-bottom: calcResponsiveSize(44, 44, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-top: calcResponsiveSize(70, 120, 769, 1728);
+    padding-bottom: calcResponsiveSize(20, 44, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-top: calcResponsiveSize(40, 70, 361, 768);
+    padding-bottom: calcResponsiveSize(20, 20, 1, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    padding-top: calcResponsiveSize(40, 40, 1, 360);
+  }
+
+  h2 {
+    width: calcResponsiveSize(746.53, 746.53, 1729, 3000);
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-xxl-min) {
+      width: calcResponsiveSize(607, 746.53, 769, 1728);
+    }
+
+    @media (max-width: $breakpoint-md-min) {
+      width: calcResponsiveSize(320, 607, 361, 768);
+    }
+
+    @media (max-width: $breakpoint-xxs-min) {
+      width: 100%;
+    }
+  }
+}

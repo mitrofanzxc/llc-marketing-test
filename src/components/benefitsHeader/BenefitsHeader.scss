@@ -1,0 +1,60 @@
+@import '../../sass/Constants.scss';
+
+.benefits-header_first {
+  width: calcResponsiveSize(292, 292, 1729, 3000);
+  height: calcResponsiveSize(119, 119, 1729, 3000);
+  padding: 4.8px 4.23px;
+  border-radius: 4px;
+  background-color: $color-white;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    width: calcResponsiveSize(229, 292, 769, 1728);
+    height: calcResponsiveSize(93, 119, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    width: calcResponsiveSize(320, 229, 361, 768);
+    height: calcResponsiveSize(93, 93, 1, 768);
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 100%;
+  }
+}
+
+.benefits-header_second {
+  display: flex;
+  align-items: center;
+  padding-top: calcResponsiveSize(26, 26, 1729, 3000);
+  padding-right: calcResponsiveSize(4, 4, 1729, 3000);
+  padding-bottom: calcResponsiveSize(26, 26, 1729, 3000);
+  padding-left: calcResponsiveSize(22, 22, 1729, 3000);
+  border: 1px solid $color-grey-light;
+  border-radius: 4px;
+  height: 100%;
+
+  @media (max-width: $breakpoint-xxl-min) {
+    padding-top: calcResponsiveSize(20, 26, 769, 1728);
+    padding-right: calcResponsiveSize(4, 4, 769, 1728);
+    padding-bottom: calcResponsiveSize(20, 26, 769, 1728);
+    padding-left: calcResponsiveSize(4, 22, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    padding-top: calcResponsiveSize(20, 20, 1, 768);
+    padding-right: calcResponsiveSize(4, 4, 1, 768);
+    padding-bottom: calcResponsiveSize(20, 20, 1, 768);
+    padding-left: calcResponsiveSize(4, 4, 1, 768);
+  }
+}
+
+.benefits-header__icon {
+  width: 106px;
+  height: 69px;
+}
+
+.benefits-header__description {
+  font-size: 16px;
+  font-size: $fw-regular;
+}

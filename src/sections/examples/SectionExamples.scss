@@ -1,0 +1,82 @@
+@import '../../sass/Constants.scss';
+
+.examples {
+  margin-top: calcResponsiveSize(164, 164, 1729, 3000);
+
+  @media (max-width: $breakpoint-xxl-min) {
+    margin-top: calcResponsiveSize(70, 164, 769, 1728);
+  }
+
+  @media (max-width: $breakpoint-md-min) {
+    margin-top: calcResponsiveSize(40, 70, 361, 768);
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
+    margin-top: calcResponsiveSize(40, 40, 1, 360);
+  }
+
+  .swiper {
+    padding-bottom: 72px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    margin-right: 14px !important;
+    background-color: $color-green;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0px !important;
+    }
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 3%;
+  margin-top: 82px;
+
+  @media (max-width: $breakpoint-xl-min) {
+    column-gap: 3.5%;
+  }
+
+  @media (max-width: $breakpoint-lg-min) {
+    column-gap: 2%;
+  }
+}
+
+.slide {
+  display: flex;
+  width: 22.75%;
+  border-radius: 4px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $breakpoint-xl-min) {
+    width: 31%;
+  }
+
+  @media (max-width: $breakpoint-lg-min) {
+    width: 49%;
+  }
+
+  @media (max-width: $breakpoint-xs-min) {
+    width: 100%;
+  }
+
+  img {
+    border-radius: 4px;
+  }
+}
