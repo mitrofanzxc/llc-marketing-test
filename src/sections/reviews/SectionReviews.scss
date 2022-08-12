@@ -3,6 +3,67 @@
 .reviews {
   margin-top: 164px;
 
+  .swiper {
+    position: relative;
+    margin-top: 72px;
+    padding-right: calcResponsiveSize(208, 208, 1729, 3000);
+    padding-left: calcResponsiveSize(208, 208, 1729, 3000);
+    padding-bottom: 72px;
+
+    @media (max-width: $breakpoint-xxl-min) {
+      padding-right: calcResponsiveSize(68, 200, 769, 1728);
+      padding-left: calcResponsiveSize(68, 200, 769, 1728);
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    margin-right: 14px !important;
+    background-color: $color-green;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0px !important;
+    }
+  }
+
+  .swiper-button-prev {
+    top: 30%;
+    width: 48px;
+    height: 48px;
+    background-image: url('../../images/icons/round-left.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      display: none;
+    }
+
+    @media (max-width: $breakpoint-sm-max) {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    top: 30%;
+    width: 48px;
+    height: 48px;
+    background-image: url('../../images/icons/round-right.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      display: none;
+    }
+
+    @media (max-width: $breakpoint-sm-max) {
+      display: none;
+    }
+  }
+
   .wrapper {
     position: relative;
   }
@@ -42,65 +103,4 @@
   row-gap: 15px;
   font-size: 20px;
   line-height: 26px;
-}
-
-.swiper {
-  position: relative;
-  margin-top: 72px;
-  padding-right: calcResponsiveSize(208, 208, 1729, 3000);
-  padding-left: calcResponsiveSize(208, 208, 1729, 3000);
-  padding-bottom: 72px;
-
-  @media (max-width: $breakpoint-xxl-min) {
-    padding-right: calcResponsiveSize(68, 200, 769, 1728);
-    padding-left: calcResponsiveSize(68, 200, 769, 1728);
-  }
-}
-
-.swiper-pagination-bullet {
-  width: 14px;
-  height: 14px;
-  margin-right: 14px !important;
-  background-color: $color-green;
-  border-radius: 50%;
-
-  &:last-child {
-    margin-right: 0px !important;
-  }
-}
-
-.swiper-button-prev {
-  top: 30%;
-  width: 48px;
-  height: 48px;
-  background-image: url('../../images/icons/round-left.svg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  &::after {
-    display: none;
-  }
-
-  @media (max-width: $breakpoint-sm-max) {
-    display: none;
-  }
-}
-
-.swiper-button-next {
-  top: 30%;
-  width: 48px;
-  height: 48px;
-  background-image: url('../../images/icons/round-right.svg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  &::after {
-    display: none;
-  }
-
-  @media (max-width: $breakpoint-sm-max) {
-    display: none;
-  }
 }

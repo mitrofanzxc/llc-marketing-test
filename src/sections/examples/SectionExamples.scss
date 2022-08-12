@@ -14,6 +14,30 @@
   @media (max-width: $breakpoint-xxs-min) {
     margin-top: calcResponsiveSize(40, 40, 1, 360);
   }
+
+  .swiper {
+    padding-bottom: 72px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    margin-right: 14px !important;
+    background-color: $color-green;
+    border-radius: 50%;
+
+    &:last-child {
+      margin-right: 0px !important;
+    }
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
 }
 
 .slider {
@@ -32,10 +56,6 @@
   @media (max-width: $breakpoint-lg-min) {
     column-gap: 2%;
   }
-
-  // @media (max-width: $breakpoint-xs-min) {
-  //   overflow: hidden;
-  // }
 }
 
 .slide {
