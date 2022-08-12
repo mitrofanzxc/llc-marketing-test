@@ -26,6 +26,7 @@ footer {
   }
 
   @media (max-width: $breakpoint-md-min) {
+    flex-wrap: wrap;
     padding-top: calcResponsiveSize(40, 40, 1, 768);
   }
 }
@@ -84,6 +85,12 @@ footer {
 .contacts {
   width: 242px;
 
+  @media (max-width: $breakpoint-sm-max) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .tel {
     font-size: calcResponsiveSize(24, 24, 1729, 3000);
     font-weight: $fw-medium;
@@ -106,8 +113,22 @@ footer {
   }
 }
 
+.adress-wrapper {
+  @media (max-width: $breakpoint-sm-max) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    column-gap: 10px;
+  }
+}
+
 .location {
   margin-top: 14px;
+
+  @media (max-width: $breakpoint-sm-max) {
+    margin-top: 0;
+  }
 }
 
 .location-icon__wrapper {
@@ -115,6 +136,10 @@ footer {
   align-items: center;
   column-gap: 10px;
   margin-top: 14px;
+
+  @media (max-width: $breakpoint-sm-max) {
+    margin-top: 0;
+  }
 }
 
 .location-icon {
@@ -128,6 +153,10 @@ footer {
   font-size: 14px;
   line-height: 23.38px;
   color: $color-white-06;
+
+  @media (max-width: $breakpoint-sm-max) {
+    width: 100%;
+  }
 }
 
 .messengers {
@@ -136,6 +165,12 @@ footer {
   column-gap: 14px;
   margin-top: 44px;
   padding-bottom: 17px;
+
+  @media (max-width: $breakpoint-sm-max) {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .messengers-wrapper {
