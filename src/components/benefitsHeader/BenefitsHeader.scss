@@ -18,7 +18,7 @@
     height: calcResponsiveSize(93, 93, 1, 768);
   }
 
-  @media (max-width: $breakpoint-xxs-min) {
+  @media (max-width: $breakpoint-sm-max) {
     width: 100%;
   }
 }

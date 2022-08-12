@@ -26,11 +26,8 @@
   }
 
   @media (max-width: $breakpoint-sm-max) {
+    top: 65%;
     width: 95%;
-  }
-
-  @media (max-width: $breakpoint-xxs-min) {
-    top: calcResponsiveSize(220, 220, 1, 360);
   }
 
   .primary-button {

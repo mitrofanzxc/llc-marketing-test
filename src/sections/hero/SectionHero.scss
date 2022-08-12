@@ -95,8 +95,11 @@
     column-gap: calcResponsiveSize(20, 24, 769, 1728);
   }
 
-  @media (max-width: $breakpoint-xxs-min) {
-    flex-wrap: wrap;
+  @media (max-width: $breakpoint-sm-max) {
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
   }
 }
 

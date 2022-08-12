@@ -15,6 +15,14 @@
   @media (max-width: $breakpoint-md-min) {
     padding-top: calcResponsiveSize(183, 396, 361, 768);
   }
+  
+  @media (max-width: $breakpoint-sm-max) {
+    padding-top: calcResponsiveSize(183, 396, 361, 768);
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+  }
 
   @media (max-width: $breakpoint-xxs-min) {
     padding-top: calcResponsiveSize(183, 183, 1, 360);
@@ -44,7 +52,7 @@ input[type='radio'] {
     width: calcResponsiveSize(229, 331, 769, 1728);
   }
 
-  @media (max-width: $breakpoint-xxs-min) {
+  @media (max-width: $breakpoint-sm-max) {
     width: 100%;
   }
 }

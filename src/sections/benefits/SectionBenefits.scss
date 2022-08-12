@@ -16,6 +16,10 @@
     padding-top: calcResponsiveSize(386, 241, 361, 768);
   }
 
+  @media (max-width: $breakpoint-sm-max) {
+    padding-top: 360px;
+  }
+
   @media (max-width: $breakpoint-xxs-min) {
     padding-top: calcResponsiveSize(386, 386, 1, 360);
   }

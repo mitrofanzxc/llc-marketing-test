@@ -42,8 +42,11 @@
     line-height: calcResponsiveSize(24, 28.8, 361, 768);
   }
 
-  @media (max-width: $breakpoint-xxs-min) {
+  @media (max-width: $breakpoint-sm-max) {
     width: 100%;
+  }
+
+  @media (max-width: $breakpoint-xxs-min) {
     font-size: calcResponsiveSize(20, 20, 1, 360);
     line-height: calcResponsiveSize(24, 24, 1, 360);
   }

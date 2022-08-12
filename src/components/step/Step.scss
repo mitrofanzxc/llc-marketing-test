@@ -22,6 +22,10 @@
 
 .step-wrapper_03 {
   order: 3;
+
+  @media (max-width: $breakpoint-sm-max) {
+    order: 4;
+  }
 }
 
 .step-wrapper_04 {
@@ -29,6 +33,10 @@
 
   @media (max-width: $breakpoint-xl-min) {
     order: 6;
+  }
+
+  @media (max-width: $breakpoint-sm-max) {
+    order: 3;
   }
 }
 
@@ -43,6 +51,7 @@
 
   @media (max-width: $breakpoint-sm-max) {
     width: 49%;
+    order: 5;
   }
 }
 
@@ -61,6 +70,7 @@
   @media (max-width: $breakpoint-sm-max) {
     display: block;
     width: 49%;
+    order: 6;
   }
 }
 
@@ -177,8 +187,6 @@
 
 .step-header {
   margin-top: 25px;
-  font-size: 30px;
-  line-height: 35.55px;
 }
 
 .step-description {
